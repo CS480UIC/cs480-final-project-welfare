@@ -9,7 +9,7 @@ DATABASE NAME: welfare
 
 # Author(s)
 
-Danyal Sheikh
+Danyal Sheikh, Harshal Patel
 
 # Database description
 This database will store the income information of residents in a city in order to see which residents are in need of assistance from government funded social welfare programs. We will need to basic information such as the annual income of the resident, family size, the resident's first and last name and the resident's address. This database could be used directly when administrations have to figure out where to disperse aid and it could also be useful in studies that focus on the underlying issues of poverty. This database is original in that all of the necessary information is stored neatly in one place, without you might have to look through a few different databases to gather all the data.
