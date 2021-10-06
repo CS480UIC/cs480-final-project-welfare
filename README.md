@@ -8,12 +8,6 @@
 DATABASE NAME: welfare
 # Author(s)
 
-Daniel Levert 
-
-Yashasvi Patel
-
-Harshal Patel
-
 Danyal Sheikh
 
 # Database description
