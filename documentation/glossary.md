@@ -31,6 +31,13 @@
 ### nutritional
 
 # Relationships
+### recipient_makes_income:
+there are many recipients who make an income. There is no more than 1 income per recipient. A recipient isn't required to have an income and an income is not necessary for a recipient.
+
+
+### recipient_livesAt_address:
+A recipient can have no more than 1 address. There is no more than 1 address per recipient. A recipient isnt required to have an address. An address must have 1 recipient living at it.
+
 
 # Attributes
 
