@@ -47,9 +47,9 @@ A recipient can have no more than 1 address. There is no more than 1 address per
 
 ### administrator - 
 
-### income - 
+### income - recipient_ID 1-1(1), total_gross M - 1(1), total_net M - 1(1), investments M - 1(1)
 
-### address - 
+### address - recipient_ID 1-1(1), city M - 1(1), state M - 1(1), street M-1(1)
 
 ### eligibility - recipient_ID, citizenship, residency, family
 
