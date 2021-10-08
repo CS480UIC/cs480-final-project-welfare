@@ -10,7 +10,7 @@
 --Description: This entity stores the personal information of the welfare recipients.
 
 ### administrator
-Name: administrator 
+--Name: administrator 
 
 --Synonym: manager, official, supervisor
 
@@ -70,7 +70,7 @@ Every one recipient proves there eligibility once.
 ### administrator_receivesFundsFrom_medical:
 Many administrators can receive funds from many medical programs.
 
-### administrator DispersesFundsTo recipient
+### administrator_DispersesFundsTo_recipient
 An administrator can disperse funds to 0 (minima) recipients or to many (maxima) recipients.
 
 A recipient receives funds from either 1(maxima) administrator or recieves nothing from 0 (minima) administrators.
