@@ -96,10 +96,10 @@ Many administrator can receive funds from many housing programs.
 
 A recipient receives funds from either 1(maxima) administrator or recieves nothing from 0 (minima) administrators.
 
-# login_grantsAccessTo_recipient: 
+### login_grantsAccessTo_recipient: 
 No more than 1 login for 1 recipient. 1 recipient can have no more than 1 login. There may be no login for a recipient, and a recipient may have no login information.
 
-# login_grantsAccessTo_administrator: 
+### login_grantsAccessTo_administrator: 
 No more than 1 login for 1 administrator. 1 administrator can have no more than 1 login. There may be no login for an administrator , and an administrator may have no login information.
 
 
