@@ -32,9 +32,9 @@
 
 ### address - 
 
-### eligibility - 
+### eligibility - recipient_ID, citizenship, residency, family
 
-### medical - 
+### medical - program_name, ID, facility, funds
 
 ### housing - 
 
