@@ -3,8 +3,18 @@
 ### login
 
 ### recipient
+--Name: recipient 
+
+--Synonym: receiver, grantee, beneficiary
+
+--Description: This entity stores the personal information of the welfare recipients.
 
 ### administrator
+Name: administrator 
+
+--Synonym: manager, official, supervisor
+
+--Description: This entity stores the personal information of the administrators in charge of dispersing the funds to the recipients.
 
 ### income
 --Name: income
@@ -60,15 +70,18 @@ Every one recipient proves there eligibility once.
 ### administrator_receivesFundsFrom_medical:
 Many administrators can receive funds from many medical programs.
 
+### administrator DispersesFundsTo recipient
+An administrator can disperse funds to 0 (minima) recipients or to many (maxima) recipients.
 
+A recipient receives funds from either 1(maxima) administrator or recieves nothing from 0 (minima) administrators.
 
 # Attributes
 
 ### login - 
 
-### recipient - 
+### recipient - ID 1-1 (1), first_name M-1 (1), last_name M-1 (1)
 
-### administrator - 
+### administrator - ID 1-1 (1), first_name M-1 (1), last_name M-1 (1), title M-1 (1)
 
 ### income - recipient_ID 1-1(1), total_gross M - 1(1), total_net M - 1(1), investments M - 1(1)
 
