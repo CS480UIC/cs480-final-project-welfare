@@ -49,9 +49,19 @@
 
 
 ### housing
+—Name: Nutritional
+
+—Synonym: Nutritional welfare programs
+
+—Description: Holds information about different nutritional programs for recipients to choose from and apply to.
 
 
 ### nutritional
+—Name: Housing 
+
+—Synonym: Housing welfare programs
+
+—Description: holds information about different housing programs for recipients to choose from and apply to.
 
 
 # Relationships
@@ -73,6 +83,12 @@ Many administrators can receive funds from many medical programs.
 ### administrator_DispersesFundsTo_recipient
 An administrator can disperse funds to 0 (minima) recipients or to many (maxima) recipients.
 
+### admistrator_DispersesFundsFrom_nutritional :
+Many administrator can receive funds from many nutritional programs.
+
+### administrator_DispersesFundsFrm_housing:
+Many administrator can receive funds from many housing programs.
+
 A recipient receives funds from either 1(maxima) administrator or recieves nothing from 0 (minima) administrators.
 
 # Attributes
@@ -91,6 +107,6 @@ A recipient receives funds from either 1(maxima) administrator or recieves nothi
 
 ### medical - program_name (M-1), ID (1-1), facility (M-M), funds (M-1)
 
-### housing - 
+### housing - Program_name(M-1(1)), ID (1-1(1)), source(M-M(1)), funds(M-1(1))
 
-### nutritional - 
+### nutritional - program_name(M-1(1)), ID(1-1(1), housing_size(M-1(1), funds(M-1(1))
