@@ -7,11 +7,11 @@
 ### administrator
 
 ### income
-Name: 
+--Name: 
 
-Synonym:
+--Synonym:
 
-Description:
+--Description:
 
 ### address
 
