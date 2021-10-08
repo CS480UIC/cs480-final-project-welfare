@@ -7,13 +7,20 @@
 ### administrator
 
 ### income
---Name: 
+--Name: income
 
---Synonym:
+--Synonym: salary
 
---Description:
+--Description: holds information about the recipients gross and net income, as well as income from investments
+
 
 ### address
+--Name: address
+
+--Synonym: location
+
+--Description: holds information about the recipient's address
+
 
 ### eligibility
 
