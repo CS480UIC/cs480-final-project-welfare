@@ -22,20 +22,20 @@
 
 # Attributes
 
-### login
+### login - 
 
-### recipient
+### recipient - 
 
-### administrator
+### administrator - 
 
-### income
+### income - 
 
-### address
+### address - 
 
-### eligibility
+### eligibility - 
 
-### medical
+### medical - 
 
-### housing
+### housing - 
 
-### nutritional
+### nutritional - 
