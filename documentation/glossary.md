@@ -151,6 +151,15 @@ last_name VARCHAR(60)
 
 ID INTEGER
 
+### administrator
+ID INTEGER
+
+first_name VARCHAR(60)
+
+last_name VARCHAR(60)
+
+title VARCHAR(80)
+
 ### income
 recipient_ID INTEGER
 
