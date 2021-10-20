@@ -128,14 +128,20 @@ No more than 1 login for 1 administrator. 1 administrator can have no more than 
 
 ### eligibility
 recipient_ID INTEGER
+
 citizenship BOOLEAN
+
 residency BOOLEAN
+
 family SMALLINT
 
 ### medical
 program_name VARCHAR(300)
+
 ID INTEGER
+
 facility VARCHAR(300)
+
 funds BIGINT
 
 
