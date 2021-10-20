@@ -152,9 +152,11 @@ recipient_makes_income
 ### address:
 recipient_livesAt_address
 
-### recipient_proves_eligibility:
+### eligibility:
+recipient_proves_eligibility
 
-### administrator_receivesFundsFrom_medical:
+### medical:
+administrator_receivesFundsFrom_medical
 
 ### administrator_DispersesFundsTo_recipient
 
