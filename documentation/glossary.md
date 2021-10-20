@@ -170,6 +170,8 @@ total_net BIGINT
 investments BIGINT
 
 ### nutritional
+plural
+unique 
 program_name VARCHAR(300)
 
 ID INTEGER
