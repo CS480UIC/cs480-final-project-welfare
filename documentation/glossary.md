@@ -146,4 +146,31 @@ recipient_livesAt_address
 ### login_grantsAccessTo_administrator: 
 
 
+# Supertypes, Subtypes, and Partitions
+we did not have any Supertypes, Subtypes, and Partitions in our diagram
+
+# Cascade/Restrict Dependency Relationships
+
+### recipient_makes_income:
+
+### recipient_livesAt_address:
+
+### recipient_proves_eligibility:
+
+### administrator_receivesFundsFrom_medical:
+
+### administrator_DispersesFundsTo_recipient
+
+### admistrator_DispersesFundsFrom_nutritional :
+
+### administrator_DispersesFundsFrm_housing:
+
+### login_grantsAccessTo_recipient: 
+
+### login_grantsAccessTo_administrator: 
+
+
+# Cascade/Restrict Foreign Keys
+
+
 
