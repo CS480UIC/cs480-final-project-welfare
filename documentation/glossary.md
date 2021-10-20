@@ -122,3 +122,28 @@ No more than 1 login for 1 administrator. 1 administrator can have no more than 
 ### housing - Program_name(M-1(1)), ID (1-1(1)), source(M-M(1)), funds(M-1(1))
 
 ### nutritional - program_name(M-1(1)), ID(1-1(1), housing_size(M-1(1), funds(M-1(1))
+
+
+# Dependent Entities and Dependency Relationships
+### income:
+recipient_makes_income
+
+### address:
+recipient_livesAt_address
+
+### recipient_proves_eligibility:
+
+### administrator_receivesFundsFrom_medical:
+
+### administrator_DispersesFundsTo_recipient
+
+### admistrator_DispersesFundsFrom_nutritional :
+
+### administrator_DispersesFundsFrm_housing:
+
+### login_grantsAccessTo_recipient: 
+
+### login_grantsAccessTo_administrator: 
+
+
+
