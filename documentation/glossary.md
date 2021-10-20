@@ -204,9 +204,9 @@ DELETE CASCADE
 ### recipient_livesAt_address:
 DELETE CASCADE
 ### recipient_proves_eligibility:
-
+DELETE CASCADE
 ### administrator_receivesFundsFrom_medical:
-
+DELETE CASCADE
 ### administrator_DispersesFundsTo_recipient
 DELETE CASCADE
 ### admistrator_DispersesFundsFrom_nutritional :
