@@ -158,15 +158,16 @@ recipient_proves_eligibility
 ### medical:
 administrator_receivesFundsFrom_medical
 
-### administrator_DispersesFundsTo_recipient
+### administrator
+login_grantsAccessTo_administrator: 
+
+### recipient
+administrator_DispersesFundsTo_recipient
+login_grantsAccessTo_recipient: 
 
 ### admistrator_DispersesFundsFrom_nutritional :
 
 ### administrator_DispersesFundsFrm_housing:
-
-### login_grantsAccessTo_recipient: 
-
-### login_grantsAccessTo_administrator: 
 
 
 # Supertypes, Subtypes, and Partitions
@@ -183,15 +184,15 @@ we did not have any Supertypes, Subtypes, and Partitions in our diagram
 ### administrator_receivesFundsFrom_medical:
 
 ### administrator_DispersesFundsTo_recipient
-
+DELETE CASCADE
 ### admistrator_DispersesFundsFrom_nutritional :
 
 ### administrator_DispersesFundsFrm_housing:
 
 ### login_grantsAccessTo_recipient: 
-
+DELETE CASCADE
 ### login_grantsAccessTo_administrator: 
-
+DELETE CASCADE
 
 # Cascade/Restrict Foreign Keys
 
