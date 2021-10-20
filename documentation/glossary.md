@@ -144,6 +144,21 @@ facility VARCHAR(300)
 
 funds BIGINT
 
+### recipient
+first_name VARCHAR(60)
+
+last_name VARCHAR(60)
+
+ID INTEGER
+
+### income
+recipient_ID INTEGER
+
+total_gross BIGINT
+
+total_net BIGINT
+
+investments BIGINT
 
 # Dependent Entities and Dependency Relationships
 ### income:
@@ -176,9 +191,9 @@ we did not have any Supertypes, Subtypes, and Partitions in our diagram
 # Cascade/Restrict Dependency Relationships
 
 ### recipient_makes_income:
-
+DELETE CASCADE
 ### recipient_livesAt_address:
-
+DELETE CASCADE
 ### recipient_proves_eligibility:
 
 ### administrator_receivesFundsFrom_medical:
@@ -196,5 +211,11 @@ DELETE CASCADE
 
 # Cascade/Restrict Foreign Keys
 
+### recipient_ID
+DELETE CASCADE
+INSERT RESTRICT
 
+### program_ID
+DELETE CASCADE
+INSERT RESTRICT
 
