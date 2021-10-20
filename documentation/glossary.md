@@ -124,6 +124,21 @@ No more than 1 login for 1 administrator. 1 administrator can have no more than 
 ### nutritional - program_name(M-1(1)), ID(1-1(1), housing_size(M-1(1), funds(M-1(1))
 
 
+# Attributes Data Types
+
+### eligibility
+recipient_ID INTEGER
+citizenship BOOLEAN
+residency BOOLEAN
+family SMALLINT
+
+### medical
+program_name VARCHAR(300)
+ID INTEGER
+facility VARCHAR(300)
+funds BIGINT
+
+
 # Dependent Entities and Dependency Relationships
 ### income:
 recipient_makes_income
