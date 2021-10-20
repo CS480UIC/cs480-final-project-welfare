@@ -201,11 +201,11 @@ recipient_proves_eligibility
 administrator_receivesFundsFrom_medical
 
 ### administrator
-login_grantsAccessTo_administrator: 
+login_grantsAccessTo_administrator 
 
 ### recipient
 administrator_DispersesFundsTo_recipient
-login_grantsAccessTo_recipient: 
+login_grantsAccessTo_recipient 
 
 ### nutritional:
 admistrator_DispersesFundsFrom_nutritional
@@ -226,9 +226,9 @@ DELETE CASCADE
 DELETE CASCADE
 ### administrator_receivesFundsFrom_medical:
 DELETE CASCADE
-### administrator_DispersesFundsTo_recipient
+### administrator_DispersesFundsTo_recipient:
 DELETE CASCADE
-### admistrator_DispersesFundsFrom_nutritional :
+### admistrator_DispersesFundsFrom_nutritional:
 DELETE CASCADE
 ### administrator_DispersesFundsFrm_housing:
 DELETE CASCADE
