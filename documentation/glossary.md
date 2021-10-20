@@ -169,6 +169,24 @@ total_net BIGINT
 
 investments BIGINT
 
+### nutritional
+program_name VARCHAR(300)
+
+ID INTEGER
+
+source VARCHAR(300)
+
+funds BIGINT
+
+### housing
+program_name VARCHAR(300)
+
+ID INTEGER
+
+housing_size SMALLINT
+
+funds BIGINT
+
 # Dependent Entities and Dependency Relationships
 ### income:
 recipient_makes_income
@@ -189,10 +207,11 @@ login_grantsAccessTo_administrator:
 administrator_DispersesFundsTo_recipient
 login_grantsAccessTo_recipient: 
 
-### admistrator_DispersesFundsFrom_nutritional :
+### nutritional:
+admistrator_DispersesFundsFrom_nutritional
 
-### administrator_DispersesFundsFrm_housing:
-
+### housing:
+administrator_DispersesFundsFrm_housing
 
 # Supertypes, Subtypes, and Partitions
 we did not have any Supertypes, Subtypes, and Partitions in our diagram
@@ -210,9 +229,9 @@ DELETE CASCADE
 ### administrator_DispersesFundsTo_recipient
 DELETE CASCADE
 ### admistrator_DispersesFundsFrom_nutritional :
-
+DELETE CASCADE
 ### administrator_DispersesFundsFrm_housing:
-
+DELETE CASCADE
 ### login_grantsAccessTo_recipient: 
 DELETE CASCADE
 ### login_grantsAccessTo_administrator: 
