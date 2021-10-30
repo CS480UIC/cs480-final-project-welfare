@@ -32,3 +32,32 @@ This database will store the income information of residents in a city in order 
 ![adminupdate](https://user-images.githubusercontent.com/60336684/139528060-0e829a63-5040-45c8-a520-3675925ddcec.PNG)
 ![admindelete](https://user-images.githubusercontent.com/60336684/139528077-177adc23-e915-4783-a12a-91026da0609a.PNG)
 
+
+## CRUD For Income
+
+![incomemenu](https://user-images.githubusercontent.com/55267253/139558122-dbffbdc6-130b-43fa-9abb-ae9809bc289a.png)
+![incomecreate](https://user-images.githubusercontent.com/55267253/139558146-ffe1c940-7c2d-47c6-a10b-0b9b9b277e5e.png)
+![incomeread](https://user-images.githubusercontent.com/55267253/139558154-a0782282-0c8e-407b-b758-52e39b5502a3.png)
+![incomeupdate](https://user-images.githubusercontent.com/55267253/139558163-44f918f4-ccc7-4ad6-b15c-56860408c919.png)
+![incomedelete](https://user-images.githubusercontent.com/55267253/139558170-41d10d1a-244e-4d15-95f8-5490459390ce.png)
+
+
+## CRUD For Address
+
+![addressmenu](https://user-images.githubusercontent.com/55267253/139558206-4e083bf8-158c-45f9-ab6b-5de8ef79548a.png)
+![addresscreate](https://user-images.githubusercontent.com/55267253/139558215-8af9ac02-e79b-465e-9f8e-4c6548f530fe.png)
+![addressread](https://user-images.githubusercontent.com/55267253/139558221-b061d1e1-2a9d-4874-9467-1a976b5b685e.png)
+![addressupdate](https://user-images.githubusercontent.com/55267253/139558227-5ed3a833-2a4b-4ad3-994b-d75f3d64e3d7.png)
+![addressdelete](https://user-images.githubusercontent.com/55267253/139558236-86e91dd7-abcb-4521-8f79-215dc19c0136.png)
+
+
+
+
+
+
+
+
+
+
+
+
