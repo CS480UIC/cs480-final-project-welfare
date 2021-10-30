@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity1</title>
+    <title>Update Income</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Delete Entity1</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+  <h1>Update Income</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update ID   :<input type="text" name="username" value="${form.ID }"/>
+	<span style="color: red; font-weight: 900">${errors.ID }</span>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Update Income"/>
 </form>
   </body>
 </html>

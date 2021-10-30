@@ -39,6 +39,8 @@
 			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp; 
 			<a href="<c:url value='/jsps/recipient/recipientmenu.jsp'/>" target="_parent">CRUD Recipient</a> |&nbsp; 
 			<a href="<c:url value='/jsps/administrator/administratormenu.jsp'/>" target="_parent">CRUD Administrator</a> |&nbsp;
+			<a href="<c:url value='/jsps/income/income_menu.jsp'/>" target="_parent">CRUD Income</a> |&nbsp; 
+			<a href="<c:url value='/jsps/address/address_menu.jsp'/>" target="_parent">CRUD Address</a> |&nbsp;
 	
 		</c:when>
 		<c:otherwise>
