@@ -13,3 +13,12 @@ Danyal Sheikh, Harshal Patel, Yashasvi Patel, Daniel Levert
 
 # Database description
 This database will store the income information of residents in a city in order to see which residents are in need of assistance from government funded social welfare programs. We will need to basic information such as the annual income of the resident, family size, the resident's first and last name and the resident's address. This database could be used directly when administrations have to figure out where to disperse aid and it could also be useful in studies that focus on the underlying issues of poverty. This database is original in that all of the necessary information is stored neatly in one place, without you might have to look through a few different databases to gather all the data.
+
+##Screenshots:
+
+##CRUD For Recipient
+![recipmenu](https://user-images.githubusercontent.com/60336684/139528022-f20c3d6d-9f9b-43ca-ba04-61b7bb94ba59.PNG)
+![createrecip](https://user-images.githubusercontent.com/60336684/139528025-c379988e-b6f4-4331-97ae-0614a9953f1a.PNG)
+![readrecip](https://user-images.githubusercontent.com/60336684/139528030-20b9d4a9-efde-4587-8b1e-b967a62251cd.PNG)
+![updaterecip](https://user-images.githubusercontent.com/60336684/139528031-c0333ffa-e4ae-4ca3-b9b9-1a50466a57de.PNG)
+![deleterecip](https://user-images.githubusercontent.com/60336684/139528033-f7131f44-f4f0-4a0a-8348-da1b4b63bb1d.PNG)
