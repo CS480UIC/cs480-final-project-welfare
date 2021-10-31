@@ -69,6 +69,10 @@ This database will store the income information of residents in a city in order 
 ![delete](https://user-images.githubusercontent.com/60336684/139568487-148d4228-759e-4ce2-9106-8a5c3b0d9982.PNG)
 
 
+## CRUD For Medical
+
+
+## CRUD For Eligibility
 
 
 
