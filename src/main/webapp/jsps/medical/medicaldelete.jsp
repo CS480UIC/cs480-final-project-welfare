@@ -24,7 +24,7 @@
   <h1>Delete Medical</h1>
 <form action="<c:url value='/MedicalServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Medical   :<input type="text" name="program_id" value="${form.program_id }"/>
+	Delete Program ID   :<input type="text" name="program_id" value="${form.program_id }"/>
 	<span style="color: red; font-weight: 900">${errors.program_id }</span>
 	<br/>
 	<input type="submit" value="Delete Medical"/>

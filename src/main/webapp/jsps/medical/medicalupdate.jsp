@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Medical</h1>
 <form action="<c:url value='/MedicalServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update Program ID   :<input type="text" name="program_id" value="${form.program_id }"/>

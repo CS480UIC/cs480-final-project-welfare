@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Eligibility</h1>
 <form action="<c:url value='/EligibilityServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update Recipient ID   :<input type="text" name="recipient_id" value="${form.recipient_id }"/>

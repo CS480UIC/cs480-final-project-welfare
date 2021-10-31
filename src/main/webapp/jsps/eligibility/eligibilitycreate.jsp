@@ -35,7 +35,7 @@
 	Family	：<input type="text" name="family" value="${form.family }"/>
 	<span style="color: red; font-weight: 900">${errors.family }</span>
 	<br/>
-	<input type="submit" value="Create Family"/>
+	<input type="submit" value="Create Eligibility"/>
 </form>
   </body>
 </html>

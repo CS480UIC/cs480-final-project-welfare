@@ -34,7 +34,7 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/> --%>
-	<input type="submit" value="Read Entity1"/>
+	<input type="submit" value="Read Eligibility"/>
 </form>
   </body>
 </html>
