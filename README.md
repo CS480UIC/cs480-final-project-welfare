@@ -70,9 +70,18 @@ This database will store the income information of residents in a city in order 
 
 
 ## CRUD For Medical
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 27 32 a  m" src="https://user-images.githubusercontent.com/47677702/139569461-3b4e34cc-ad9e-4d4b-9bbe-42e0af3b9d71.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 27 56 a  m" src="https://user-images.githubusercontent.com/47677702/139569462-a408ce99-b4b8-43e9-a16e-02b99bca730d.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 28 02 a  m" src="https://user-images.githubusercontent.com/47677702/139569463-84b76cde-cb0b-4d4d-8f4e-54fe6fd73894.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 28 46 a  m" src="https://user-images.githubusercontent.com/47677702/139569464-f8050777-852a-4861-afe5-20a8f00e874c.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 29 00 a  m" src="https://user-images.githubusercontent.com/47677702/139569465-e162116d-3e57-4e09-92a6-48d030be5287.png">
 
 
 ## CRUD For Eligibility
-
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 22 41 a  m" src="https://user-images.githubusercontent.com/47677702/139569471-63888e77-e071-4468-a0c2-fe56117e5a18.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 23 58 a  m" src="https://user-images.githubusercontent.com/47677702/139569473-76002f07-eb15-4209-bc78-610584360de2.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 24 44 a  m" src="https://user-images.githubusercontent.com/47677702/139569475-68abd539-a101-4fb8-9c50-8e89a878a6c8.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 25 20 a  m" src="https://user-images.githubusercontent.com/47677702/139569476-f67a3dc5-7478-4f98-9f4b-44310406c8d9.png">
+<img width="518" alt="Captura de Pantalla 2021-10-31 a la(s) 12 25 40 a  m" src="https://user-images.githubusercontent.com/47677702/139569477-5c9cf249-3df2-404e-af8f-3cd74b39895f.png">
 
 
