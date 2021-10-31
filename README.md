@@ -50,12 +50,23 @@ This database will store the income information of residents in a city in order 
 ![addressupdate](https://user-images.githubusercontent.com/55267253/139558227-5ed3a833-2a4b-4ad3-994b-d75f3d64e3d7.png)
 ![addressdelete](https://user-images.githubusercontent.com/55267253/139558236-86e91dd7-abcb-4521-8f79-215dc19c0136.png)
 
+## CRUD For Nutritional Program
 
 
 
+![crud](https://user-images.githubusercontent.com/60336684/139568202-ee8e9225-840a-4e55-9417-15d9eb250c03.PNG)
+![create](https://user-images.githubusercontent.com/60336684/139568203-9d0de560-535f-4214-978a-f2672bec6c95.PNG)
+![read](https://user-images.githubusercontent.com/60336684/139568207-4392c05e-263f-4870-80fd-8c5038270069.PNG)
+![update](https://user-images.githubusercontent.com/60336684/139568209-1f5c4e78-871b-4d65-8298-ed23fe5315be.PNG)
+![delete](https://user-images.githubusercontent.com/60336684/139568213-c7a73e60-83c4-4167-88c0-612009ed9430.PNG)
 
 
-
+## CRUD For Housing Program
+![crud](https://user-images.githubusercontent.com/60336684/139568525-0bef7624-b050-4525-bc75-0f609b4f5bc4.PNG)
+![create](https://user-images.githubusercontent.com/60336684/139568504-7a25ba37-7304-4981-a4b4-c5274d105b60.PNG)
+![read](https://user-images.githubusercontent.com/60336684/139568482-25dda17e-e9a5-47ee-8a03-db3c354f3de5.PNG)
+![update](https://user-images.githubusercontent.com/60336684/139568484-0c578ed2-d54a-48f4-a8d6-fb8194b9681f.PNG)
+![delete](https://user-images.githubusercontent.com/60336684/139568487-148d4228-759e-4ce2-9106-8a5c3b0d9982.PNG)
 
 
 

@@ -41,6 +41,8 @@
 			<a href="<c:url value='/jsps/administrator/administratormenu.jsp'/>" target="_parent">CRUD Administrator</a> |&nbsp;
 			<a href="<c:url value='/jsps/income/income_menu.jsp'/>" target="_parent">CRUD Income</a> |&nbsp; 
 			<a href="<c:url value='/jsps/address/address_menu.jsp'/>" target="_parent">CRUD Address</a> |&nbsp;
+			<a href="<c:url value='/jsps/nutritionalprogram/nutritionalmenu.jsp'/>" target="_parent">CRUD Nutritional</a> |&nbsp; 
+			<a href="<c:url value='/jsps/housingprogram/housingmenu.jsp'/>" target="_parent">CRUD Housing</a> |&nbsp; 
 	
 		</c:when>
 		<c:otherwise>
