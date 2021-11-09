@@ -59,3 +59,25 @@ CREATE TABLE address
   		ON DELETE CASCADE
   		INSERT RESTRICT
 );
+
+CREATE TABLE medical
+(
+	recipient_ID INT,
+	citizenship VARCHAR(60) NOT NULL,
+	residency VARCHAR(100) NOT NULL,
+	family VARCHAR(100) NOT NULL,
+	FOREIGN KEY (recipient_ID) REFERENCES recipient(ID)
+		ON DELETE CASCADE
+		INSERT RESTRICT
+);
+
+CREATE TABLE eligibility
+(
+	program_ID INT,
+	program_name VARCHAR(300) NOT NULL,
+	facility VARCHAR(300) NOT NULL,
+	funds BIGINT NOT NULL,
+	FOREIGN KEY (program_ID) REFERENCES administrator(ID)
+		ON DELETE CASCADE
+		INSERT RESTRICT
+);
