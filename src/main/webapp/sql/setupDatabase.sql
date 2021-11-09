@@ -37,3 +37,25 @@ CREATE TABLE administrator
   title VARCHAR(60) NOT NULL,
   ID INT PRIMARY KEY
 );
+
+CREATE TABLE income
+(
+  recipient_ID INT,
+  total_gross BIGINT NOT NULL,
+  total_net BIGINT NOT NULL,
+  investments BIGINT NOT NULL,
+  FOREIGN KEY (recipient_ID) REFERENCES recipient(ID)
+  		ON DELETE CASCADE
+  		INSERT RESTRICT
+);
+
+CREATE TABLE address
+(
+  recipient_ID INT,
+  city VARCHAR(60) NOT NULL,
+  state VARCHAR(60) NOT NULL,
+  street VARCHAR(80) NOT NULL,
+  FOREIGN KEY (recipient_ID) REFERENCES recipient(ID)
+  		ON DELETE CASCADE
+  		INSERT RESTRICT
+);
