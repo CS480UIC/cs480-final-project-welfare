@@ -1,6 +1,6 @@
-program_name,Program_ID,Source,Funds
-Medicare,1,Google,100000
-Medicaid,2,Facebook,20000
-Veterans Care,3,Apple,30000
-TRICARE,4,department of health,40000
-IHS,5,CDC,100000
+program_name,program_ID,administrator_ID,funds
+Medicare,1,601347,100000
+Medicaid,2,89245,20000
+Veterans Care,3,982321,30000
+TRICARE,4,298571,40000
+IHS,5,983126,100000
