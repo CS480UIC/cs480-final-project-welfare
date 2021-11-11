@@ -18,7 +18,7 @@ CREATE TABLE `user` (
 
 CREATE TABLE login
 (
-  username VARCHAR(60) primary key,
+  username VARCHAR(60) PRIMARY KEY,
   pass VARCHAR(60) NOT NULL UNIQUE,
   email VARCHAR(60) NOT NULL UNIQUE
 );
