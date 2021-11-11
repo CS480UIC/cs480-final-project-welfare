@@ -118,7 +118,7 @@ CREATE TABLE housing
 	program_name VARCHAR(300) NOT NULL,
 	program_ID INT PRIMARY KEY,
 	administrator_ID INT UNIQUE NOT NULL,
-	housing_size SMALLINT NOT NULL;
+	housing_size SMALLINT NOT NULL,
 	funds BIGINT NOT NULL,
 	FOREIGN KEY (administrator_ID) REFERENCES administrator(ID)
 		ON DELETE CASCADE
