@@ -19,3 +19,12 @@ FROM nutritional;
 SELECT recipient.first_name, recipient.last_name, income.total_net
 FROM recipient
 INNER JOIN income on recipient.ID = income.recipient_ID;
+
+### CREATING INDEXES ###
+
+# Index for recipient_table
+CREATE INDEX recipID
+ON recipient(ID);
+# Index for administrator_table
+CREATE INDEX AdminTitles
+ON administrator(title);
