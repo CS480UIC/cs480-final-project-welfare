@@ -1,6 +1,6 @@
 program_name,program_ID,administrator_ID,housing_size,funds
 Helper Housing,12345,601347,3,500000
 Assisted Living,67890,89245,5,700000
-Homes for the Homeless,910112,982321,,1,2000000
-Affordable Housing Program,987654,298571,,4,509015
+Homes for the Homeless,910112,982321,1,2000000
+Affordable Housing Program,987654,298571,4,509015
 Under One Roof,289317,983126,8,801999
