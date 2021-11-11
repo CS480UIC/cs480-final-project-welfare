@@ -20,7 +20,7 @@ SELECT recipient.first_name, recipient.last_name, income.total_net
 FROM recipient
 INNER JOIN income on recipient.ID = income.recipient_ID;
 
-### CREATING INDEXES ###
+### CREATING INDEXES For Each Table ###
 
 # Index for recipient_table
 CREATE INDEX recipID
