@@ -1,6 +1,6 @@
-Timestamp,first_name,last_name,title,ID
-10/19/2021 21:31:26,Bill,Williamson,Manager,601347
-10/19/2021 21:32:26,Joseph,Joestar,Clerk,89245
-10/19/2021 21:33:08,William,Blake,Manager,982321
-10/19/2021 21:34:12,Sara,Cruz,Clerk,298571
-10/19/2021 21:35:25,Sylvia,Plath,Manager,983126
+first_name,last_name,title,ID
+Bill,Williamson,Manager,601347
+Joseph,Joestar,Clerk,89245
+William,Blake,Manager,982321
+Sara,Cruz,Clerk,298571
+Sylvia,Plath,Manager,983126
