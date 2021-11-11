@@ -87,7 +87,7 @@ CREATE TABLE medicalfacility
 	program_ID INT UNIQUE NOT NULL,
 	medicalfacility_ID INT PRIMARY KEY,
 	facility VARCHAR(300) NOT NULL,
-	FOREIGN KEY (program_ID) REFERENCES nutritional(program_ID)
+	FOREIGN KEY (program_ID) REFERENCES medical(program_ID)
 		ON DELETE CASCADE
 		ON UPDATE RESTRICT
 );
