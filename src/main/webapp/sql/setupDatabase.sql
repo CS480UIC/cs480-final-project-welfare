@@ -60,7 +60,7 @@ CREATE TABLE address
   		ON UPDATE RESTRICT
 );
 
-CREATE TABLE medical
+CREATE TABLE eligibility
 (
 	recipient_ID INT,
 	citizenship VARCHAR(60) NOT NULL,
@@ -71,13 +71,23 @@ CREATE TABLE medical
 		ON UPDATE RESTRICT
 );
 
-CREATE TABLE eligibility
+CREATE TABLE medical
 (
-	program_ID INT,
 	program_name VARCHAR(300) NOT NULL,
-	facility VARCHAR(300) NOT NULL,
+	program_ID INT PRIMARY KEY,
+	administrator_ID INT UNIQUE NOT NULL,
 	funds BIGINT NOT NULL,
-	FOREIGN KEY (program_ID) REFERENCES administrator(ID)
+	FOREIGN KEY (administrator_ID) REFERENCES administrator(ID)
+		ON DELETE CASCADE
+		ON UPDATE RESTRICT
+);
+
+CREATE TABLE medicalfacility
+(
+	program_ID INT UNIQUE NOT NULL,
+	medicalfacility_ID INT PRIMARY KEY,
+	facility VARCHAR(300) NOT NULL,
+	FOREIGN KEY (program_ID) REFERENCES nutritional(program_ID)
 		ON DELETE CASCADE
 		ON UPDATE RESTRICT
 );
