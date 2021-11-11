@@ -81,3 +81,25 @@ CREATE TABLE eligibility
 		ON DELETE CASCADE
 		ON UPDATE RESTRICT
 );
+
+CREATE TABLE housing
+(
+	program_ID INT,
+	program_name VARCHAR(300) NOT NULL,
+	housing_size SMALLINT NOT NULL,
+	funds BIGINT NOT NULL,
+	FOREIGN KEY (program_ID) REFERENCES administrator(ID)
+		ON DELETE CASCADE
+		ON UPDATE RESTRICT
+);
+
+CREATE TABLE nutritional
+(
+	program_ID INT,
+	program_name VARCHAR(300) NOT NULL,
+	source VARCHAR(300) NOT NULL,
+	funds BIGINT NOT NULL,
+	FOREIGN KEY (program_ID) REFERENCES administrator(ID)
+		ON DELETE CASCADE
+		ON UPDATE RESTRICT
+);
