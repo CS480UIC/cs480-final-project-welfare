@@ -40,7 +40,7 @@ CREATE TABLE administrator
 
 CREATE TABLE income
 (
-  recipient_ID INT,
+  recipient_ID INT UNIQUE NOT NULL,
   total_gross BIGINT NOT NULL,
   total_net BIGINT NOT NULL,
   investments BIGINT NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE income
 
 CREATE TABLE address
 (
-  recipient_ID INT,
+  recipient_ID INT UNIQUE NOT NULL,
   city VARCHAR(60) NOT NULL,
   state VARCHAR(60) NOT NULL,
   street VARCHAR(80) NOT NULL,
@@ -78,6 +78,39 @@ CREATE TABLE eligibility
 	facility VARCHAR(300) NOT NULL,
 	funds BIGINT NOT NULL,
 	FOREIGN KEY (program_ID) REFERENCES administrator(ID)
+		ON DELETE CASCADE
+		ON UPDATE RESTRICT
+);
+
+CREATE TABLE nutritional
+(
+	program_name VARCHAR(300) NOT NULL,
+	program_ID INT PRIMARY KEY,
+	administrator_ID INT UNIQUE NOT NULL,
+	funds BIGINT NOT NULL,
+	FOREIGN KEY (administrator_ID) REFERENCES administrator(ID)
+		ON DELETE CASCADE
+		ON UPDATE RESTRICT
+);
+
+CREATE TABLE nutritionalsource
+(
+	program_ID INT UNIQUE NOT NULL,
+	nutritionalsource_ID INT,
+	source VARCHAR(300) NOT NULL,
+	FOREIGN KEY (program_ID) REFERENCES nutritional(program_ID)
+		ON DELETE CASCADE
+		ON UPDATE RESTRICT
+);
+
+CREATE TABLE housing
+(
+	program_name VARCHAR(300) NOT NULL,
+	program_ID INT PRIMARY KEY,
+	administrator_ID INT UNIQUE NOT NULL,
+	housing_size SMALLINT NOT NULL;
+	funds BIGINT NOT NULL,
+	FOREIGN KEY (administrator_ID) REFERENCES administrator(ID)
 		ON DELETE CASCADE
 		ON UPDATE RESTRICT
 );
