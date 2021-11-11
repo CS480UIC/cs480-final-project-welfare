@@ -1,6 +1,6 @@
-Timestamp,first_name,last_name,ID
-10/19/2021 21:37:35,Leroy,Jenkins,978654
-10/19/2021 21:39:24,Smitty,Wermanjenson,983628
-10/19/2021 21:39:50,Anders,Zorn,975623
-10/19/2021 21:41:39,Aubrey,Beardsley,10294
-10/19/2021 21:42:08,Steve,Rogers,574698
+first_name,last_name,ID
+Leroy,Jenkins,978654
+Smitty,Wermanjenson,983628
+Anders,Zorn,975623
+Aubrey,Beardsley,10294
+Steve,Rogers,574698
