@@ -1,6 +1,6 @@
-Timestamp,program_name,Program_ID,Source,Funds
-10/19/2021 23:44:05,Medicare,1,Google,100000
-10/19/2021 23:45:43,Medicaid,2,Facebook,20000
-10/19/2021 23:47:24,Veterans Care,3,Apple,30000
-10/19/2021 23:50:08,TRICARE,4,department of health,40000
-10/19/2021 23:51:27,IHS,5,CDC,100000
+program_name,Program_ID,Source,Funds
+Medicare,1,Google,100000
+Medicaid,2,Facebook,20000
+Veterans Care,3,Apple,30000
+TRICARE,4,department of health,40000
+IHS,5,CDC,100000
