@@ -117,3 +117,36 @@ END$$
 
 DELIMITER ;
 ;
+
+### Medical program with higher funds than 500000 ###
+USE `welfare`;
+DROP procedure IF EXISTS `higherMedicalProgram`;
+
+USE `welfare`;
+DROP procedure IF EXISTS `welfare`.`higherMedicalProgram`;
+;
+
+DELIMITER $$
+USE `welfare`$$
+CREATE DEFINER=`welfare`@`localhost` PROCEDURE `higherMedicalProgram`()
+BEGIN
+SELECT program_name,program_ID from welfare.medical 
+where funds >= 50000;
+END$$
+
+DELIMITER ;
+;
+
+### SELECT all managers ###
+USE `welfare`;
+DROP procedure IF EXISTS `allManagers`;
+
+DELIMITER $$
+USE `welfare`$$
+CREATE PROCEDURE `allManagers` ()
+BEGIN
+SELECT first_name, last_name from welfare.administrator 
+where title = 'Manager';
+END$$
+
+DELIMITER ;
