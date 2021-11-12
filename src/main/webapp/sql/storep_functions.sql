@@ -78,3 +78,41 @@ END$$
 
 DELIMITER ;
 ;
+
+
+### TOTAL INCOME PROCEDURE ###
+USE `welfare`;
+DROP procedure IF EXISTS `new_procedure`;
+
+DELIMITER $$
+USE `welfare`$$
+CREATE PROCEDURE `total_income_procedure` ()
+BEGIN
+SELECT total_net, total_gross FROM income
+WHERE total_net != total_gross;
+END$$
+
+DELIMITER ;
+
+
+### GET RECIPIENT IDs FOR RECIPIENTS WITH $0 IN INVESTMENTS FUNCTION ###
+USE `welfare`;
+DROP function IF EXISTS `recipInvest`;
+
+USE `welfare`;
+DROP function IF EXISTS `welfare`.`recipInvest`;
+;
+
+DELIMITER $$
+USE `welfare`$$
+CREATE DEFINER=`root`@`localhost` FUNCTION `recipInvest`(invest int) RETURNS int
+    READS SQL DATA
+BEGIN
+
+DECLARE recipID int;
+SELECT recipient_ID INTO recipID FROM income
+WHERE investments = invest;
+RETURN recipID;
+END$$
+
+DELIMITER ;
