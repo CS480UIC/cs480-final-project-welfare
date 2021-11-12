@@ -106,14 +106,14 @@ DROP function IF EXISTS `welfare`.`recipInvest`;
 
 DELIMITER $$
 USE `welfare`$$
-CREATE DEFINER=`root`@`localhost` FUNCTION `recipInvest`(invest int) RETURNS int
+CREATE DEFINER=`root`@`localhost` FUNCTION `recipInvest`(recip int) RETURNS int
     READS SQL DATA
 BEGIN
-
-DECLARE recipID int;
-SELECT recipient_ID INTO recipID FROM income
-WHERE investments = invest;
-RETURN recipID;
+DECLARE invest int;
+SELECT investments INTO invest FROM income
+WHERE recipient_ID = recip;
+RETURN invest;
 END$$
 
 DELIMITER ;
+;
