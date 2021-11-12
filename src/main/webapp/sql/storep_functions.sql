@@ -44,6 +44,7 @@ END$$
 
 DELIMITER ;
 ;
+
 ### SELECT ALL ADDRESS PROCEDURE ###
 USE `welfare`;
 DROP procedure IF EXISTS `new_procedure`;
