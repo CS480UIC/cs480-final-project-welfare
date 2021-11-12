@@ -1,8 +1,6 @@
-CREATE DATABASE  IF NOT EXISTS `welfare` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `welfare`;
 -- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
--- Host: localhost    Database: welfare
+-- Host: 127.0.0.1    Database: welfare
 -- ------------------------------------------------------
 -- Server version	8.0.26
 
@@ -200,7 +198,6 @@ CREATE TABLE `login` (
 
 LOCK TABLES `login` WRITE;
 /*!40000 ALTER TABLE `login` DISABLE KEYS */;
-INSERT INTO `login` VALUES ('anders95','hiddenpass','anders95@gmail.com'),('notthatguy79','secret','notthatguy79@gmail.com'),('runner267','jogislife','runner267@gmail.com'),('spicywater6','whyisitspicy','spicywater6@gmail.com'),('thatguy76','password1','thatguy76@gmail.com');
 /*!40000 ALTER TABLE `login` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -323,6 +320,7 @@ DROP TABLE IF EXISTS `recipient`;
 CREATE TABLE `recipient` (
   `first_name` varchar(60) NOT NULL,
   `last_name` varchar(60) NOT NULL,
+  `birthdate` date NOT NULL,
   `ID` int NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -334,7 +332,7 @@ CREATE TABLE `recipient` (
 
 LOCK TABLES `recipient` WRITE;
 /*!40000 ALTER TABLE `recipient` DISABLE KEYS */;
-INSERT INTO `recipient` VALUES ('Aubrey','Beardsley',10294),('Steve','Rogers',574698),('Anders','Zorn',975623),('Leroy','Jenkins',978654),('Smitty','Wermanjenson',983628);
+INSERT INTO `recipient` VALUES ('Aubrey','Beardsley','2000-04-23',10294),('Steve','Rogers','1996-09-15',574698),('Anders','Zorn','1989-02-18',975623),('Leroy','Jenkins','1979-07-22',978654),('Smitty','Wermanjenson','1965-04-04',983628);
 /*!40000 ALTER TABLE `recipient` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -371,4 +369,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-10 23:05:05
+-- Dump completed on 2021-11-11 21:46:57

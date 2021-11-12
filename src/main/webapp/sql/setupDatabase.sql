@@ -27,6 +27,7 @@ CREATE TABLE recipient
 (
   first_name VARCHAR(60) NOT NULL,
   last_name VARCHAR(60) NOT NULL,
+  birthdate DATE NOT NULL,
   ID INT PRIMARY KEY
 );
 
