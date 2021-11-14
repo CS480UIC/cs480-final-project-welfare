@@ -106,3 +106,16 @@ ON medicalfacility(medicalfacility_ID)
 CREATE INDEX Eligibility
 ON eligibility(recipient_ID)
 
+#Index for housing_table
+
+CREATE INDEX HousingProgramID
+ON housing(program_ID);
+
+#Index for nutritional_table
+CREATE INDEX nutritionalProgramID
+ON nutritional(program_ID);
+
+#Index for nutritionalSource
+CREATE INDEX nutritionalSource
+ON nutritionalSource(program_ID);
+
