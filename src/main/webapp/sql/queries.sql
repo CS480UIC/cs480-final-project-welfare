@@ -5,10 +5,10 @@ FROM nutritional
 WHERE funds > 500000
 ORDER BY funds;
 
-CREATE VIEW NetIncomeOver50000 AS
+CREATE VIEW IncomeBetween10000And30000 AS
 SELECT total_net 
 FROM income
-WHERE total_net > 50000
+WHERE total_net > 10000 AND total_net < 30000
 ORDER BY recipient_ID;
 
 CREATE VIEW TotalGrossOver10000 AS
@@ -30,8 +30,8 @@ SELECT avg(funds)
 FROM nutritional;
 
 # string function
-CREATE VIEW LongestRecipientName AS
-SELECT MAX(LEN(first_name)) 
+CREATE VIEW LongestRecipientNameCount AS
+SELECT MAX(LENGTH(first_name)) AS FirstNameCount, MAX(LENGTH(last_name)) AS LastNameCount
 FROM recipient;
 
 # date function
