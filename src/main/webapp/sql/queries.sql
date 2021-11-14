@@ -54,13 +54,12 @@ FROM recipient
 INNER JOIN income on recipient.ID = income.recipient_ID;
 
 # correlated subquery query without exists
-CREATE VIEW NetIncomeDoesNotExceedFundsPerRecipient AS
-SELECT COUNT(ID) AS numOfRecipients 
-FROM recipient
-WHERE (funds / numOfRecipients) >
-	(SELECT total_net 
-	FROM income
-	WHERE recipient.id = recipient_id);
+CREATE VIEW RecipientsEligibleForAllMedicalPrograms AS
+SELECT recipient_ID
+FROM income
+WHERE total_net <
+	(SELECT MIN(funds) 
+	 FROM medical);
 
 # correlated subquery query with exists
 CREATE VIEW InvestmentsAboveZero AS
