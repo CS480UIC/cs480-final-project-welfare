@@ -17,6 +17,11 @@ FROM income
 WHERE total_gross > 10000
 ORDER BY total_gross;
 
+CREATE VIEW Mangers AS
+SELECT first_name,last_name from administrator
+where title like 'm%'
+ORDER BY first_name;
+
 ### Aggregate Queries ###
 
 # numeric function
@@ -33,6 +38,12 @@ FROM recipient;
 CREATE VIEW OldestDate AS
 SELECT MIN(birthdate) AS "Min Date"  
 FROM recipient;
+
+# having function
+CREATE VIEW IncomeOver50000
+SELECT recipient_ID, total_gross from income
+group by recipient_ID
+having total_gross > 50000;
 
 ### Complex Queries ###
 
@@ -59,6 +70,11 @@ WHERE EXISTS
 	(SELECT *
      FROM income
      WHERE C.investments > 0);	
+     
+# complex query using join
+CREATE VIEW nutritionalSource AS
+SELECT nutritional.program_name, nutritionalsource.source from nutritional 
+inner join nutritionalsource on nutritional.program_ID = nutritionalsource.program_ID;
 
 ### CREATING INDEXES For Each Table ###
 

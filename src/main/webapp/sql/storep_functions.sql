@@ -118,24 +118,6 @@ END$$
 DELIMITER ;
 ;
 
-### Medical program with higher funds than 500000 ###
-USE `welfare`;
-DROP procedure IF EXISTS `higherMedicalProgram`;
-
-USE `welfare`;
-DROP procedure IF EXISTS `welfare`.`higherMedicalProgram`;
-;
-
-DELIMITER $$
-USE `welfare`$$
-CREATE DEFINER=`welfare`@`localhost` PROCEDURE `higherMedicalProgram`()
-BEGIN
-SELECT program_name,program_ID from welfare.medical 
-where funds >= 50000;
-END$$
-
-DELIMITER ;
-;
 
 ### SELECT all managers ###
 USE `welfare`;
@@ -150,3 +132,24 @@ where title = 'Manager';
 END$$
 
 DELIMITER ;
+;
+
+
+###function for total housing funds ###
+USE `welfare`;
+DROP function IF EXISTS `totalHousingFunds`;
+
+DELIMITER $$
+USE `welfare`$$
+CREATE FUNCTION `totalHousingFunds` ()
+RETURNS INTEGER
+READS SQL DATA
+BEGIN
+declare totalFunds int;
+select sum(funds) into totalFunds 
+from welfare.housing;
+RETURN totalFunds;
+END$$
+
+DELIMITER ;
+;
