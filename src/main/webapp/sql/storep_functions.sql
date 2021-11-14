@@ -51,7 +51,7 @@ DROP procedure IF EXISTS `new_procedure`;
 
 DELIMITER $$
 USE `welfare`$$
-CREATE PROCEDURE `new_procedure` ()
+CREATE PROCEDURE `getRecipCity` ()
 BEGIN
 SELECT recipient_ID
 FROM address
