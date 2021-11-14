@@ -81,6 +81,7 @@ inner join nutritionalsource on nutritional.program_ID = nutritionalsource.progr
 # Index for recipient_table
 CREATE INDEX recipID
 ON recipient(ID);
+
 # Index for administrator_table
 CREATE INDEX AdminTitles
 ON administrator(title);
@@ -88,6 +89,20 @@ ON administrator(title);
 # Index for income_table
 CREATE INDEX IncomeRecID
 ON income(recipient_ID);
+
 # Index for address_table
 CREATE INDEX AddressRecID
 ON address(recipient_ID);
+
+# Index for medical_table
+CREATE INDEX MedicalProgramID
+ON medical(program_ID);
+
+# Index for medicalfacility_table
+CREATE INDEX MedicalFacility
+ON medicalfacility(medicalfacility_ID)
+
+# Index for eligibility_table
+CREATE INDEX Eligibility
+ON eligibility(recipient_ID)
+
