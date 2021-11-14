@@ -14,7 +14,7 @@ ORDER BY recipient_ID;
 CREATE VIEW TotalGrossOver10000 AS
 SELECT recipient_ID
 FROM income
-WHERE total_gross > 10000
+WHERE total_gross > 10000 AND investments > 0
 ORDER BY total_gross;
 
 CREATE VIEW Mangers AS
@@ -35,8 +35,8 @@ SELECT MAX(LENGTH(first_name)) AS FirstNameCount, MAX(LENGTH(last_name)) AS Last
 FROM recipient;
 
 # date function
-CREATE VIEW OldestDate AS
-SELECT MIN(birthdate) AS "Min Date"  
+CREATE VIEW OldestYear AS
+SELECT YEAR(MIN(birthdate)) AS "Year"  
 FROM recipient;
 
 # having function
