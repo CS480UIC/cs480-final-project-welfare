@@ -84,3 +84,10 @@ ON recipient(ID);
 # Index for administrator_table
 CREATE INDEX AdminTitles
 ON administrator(title);
+
+# Index for income_table
+CREATE INDEX IncomeRecID
+ON income(recipient_ID);
+# Index for address_table
+CREATE INDEX AddressRecID
+ON address(recipient_ID);
