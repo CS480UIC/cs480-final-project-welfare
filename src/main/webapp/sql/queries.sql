@@ -71,7 +71,7 @@ WHERE EXISTS
      WHERE C.investments > 0);	
      
 # complex query using join
-CREATE VIEW nutritionalSource AS
+CREATE VIEW getNutritionalSource AS
 SELECT nutritional.program_name, nutritionalsource.source from nutritional 
 inner join nutritionalsource on nutritional.program_ID = nutritionalsource.program_ID;
 
