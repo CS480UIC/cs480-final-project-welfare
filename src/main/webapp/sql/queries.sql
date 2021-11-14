@@ -40,7 +40,7 @@ SELECT MIN(birthdate) AS "Min Date"
 FROM recipient;
 
 # having function
-CREATE VIEW IncomeOver50000
+CREATE VIEW IncomeOver50000 AS
 SELECT recipient_ID, total_gross from income
 group by recipient_ID
 having total_gross > 50000;
@@ -81,7 +81,6 @@ inner join nutritionalsource on nutritional.program_ID = nutritionalsource.progr
 # Index for recipient_table
 CREATE INDEX recipID
 ON recipient(ID);
-
 # Index for administrator_table
 CREATE INDEX AdminTitles
 ON administrator(title);
@@ -89,32 +88,6 @@ ON administrator(title);
 # Index for income_table
 CREATE INDEX IncomeRecID
 ON income(recipient_ID);
-
 # Index for address_table
 CREATE INDEX AddressRecID
 ON address(recipient_ID);
-
-# Index for medical_table
-CREATE INDEX MedicalProgramID
-ON medical(program_ID);
-
-# Index for medicalfacility_table
-CREATE INDEX MedicalFacility
-ON medicalfacility(medicalfacility_ID);
-
-# Index for eligibility_table
-CREATE INDEX Eligibility
-ON eligibility(recipient_ID);
-
-# Index for housing_table
-CREATE INDEX HousingProgramID
-ON housing(program_ID);
-
-# Index for nutritional_table
-CREATE INDEX nutritionalProgramID
-ON nutritional(program_ID);
-
-# Index for nutritionalSource
-CREATE INDEX nutritionalSource
-ON nutritionalSource(program_ID);
-
