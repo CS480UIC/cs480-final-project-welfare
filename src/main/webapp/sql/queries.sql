@@ -100,22 +100,21 @@ ON medical(program_ID);
 
 # Index for medicalfacility_table
 CREATE INDEX MedicalFacility
-ON medicalfacility(medicalfacility_ID)
+ON medicalfacility(medicalfacility_ID);
 
 # Index for eligibility_table
 CREATE INDEX Eligibility
-ON eligibility(recipient_ID)
+ON eligibility(recipient_ID);
 
-#Index for housing_table
-
+# Index for housing_table
 CREATE INDEX HousingProgramID
 ON housing(program_ID);
 
-#Index for nutritional_table
+# Index for nutritional_table
 CREATE INDEX nutritionalProgramID
 ON nutritional(program_ID);
 
-#Index for nutritionalSource
+# Index for nutritionalSource
 CREATE INDEX nutritionalSource
 ON nutritionalSource(program_ID);
 
