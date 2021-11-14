@@ -1,8 +1,8 @@
 ### Simple Queries ###
-CREATE VIEW NutritionalFundsOver500000 AS
+CREATE VIEW NutritionalFundsOverOrUnder AS
 SELECT funds
 FROM nutritional
-WHERE funds > 500000
+WHERE funds > 500000 OR FUNDS < 250000
 ORDER BY funds;
 
 CREATE VIEW IncomeBetween10000And30000 AS
