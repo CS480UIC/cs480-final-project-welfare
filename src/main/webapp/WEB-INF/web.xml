@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
-    <servlet>
+  <servlet>
     <description></description>
     <display-name>Entity1ServletCreate</display-name>
     <servlet-name>Entity1ServletCreate</servlet-name>
@@ -93,8 +93,18 @@
     <servlet-name>UserServletLogout</servlet-name>
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
-  
-  
+    
+  <servlet>
+    <description></description>
+    <display-name>IncomeServletCreate</display-name>
+    <servlet-name>IncomeServletCreate</servlet-name>
+    <servlet-class>income.web.servlet.IncomeServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncomeServletCreate</servlet-name>
+    <url-pattern>/IncomeServletCreate</url-pattern>
+  </servlet-mapping>
+
   <servlet>
     <description></description>
     <display-name>findAll</display-name>

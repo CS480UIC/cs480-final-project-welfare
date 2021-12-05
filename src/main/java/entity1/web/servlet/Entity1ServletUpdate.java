@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import entity1.dao.Entity1Dao;
-import entity1.domain.Entity1;
+import entity1.domain.Income;
 
 /**
  * Servlet implementation class UserServlet
@@ -42,7 +42,7 @@ public class Entity1ServletUpdate extends HttpServlet {
 
 		String method = request.getParameter("method");
 		Entity1Dao entity1dao = new Entity1Dao();
-		Entity1 entity1 = null;
+		Income entity1 = null;
 
 		if(method.equals("search"))
 		{
@@ -69,7 +69,7 @@ public class Entity1ServletUpdate extends HttpServlet {
 		else if(method.equals("update"))
 		{
 			Map<String,String[]> paramMap = request.getParameterMap();
-			Entity1 form = new Entity1();
+			Income form = new Income();
 			List<String> info = new ArrayList<String>();
 
 			for(String name : paramMap.keySet()) {

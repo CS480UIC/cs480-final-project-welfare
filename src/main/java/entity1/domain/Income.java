@@ -6,7 +6,7 @@ package entity1.domain;
  * @author Aayush Makharia
  * 
  */
-public class Entity1 {
+public class Income {
 	/*
 	 * Correspond to the user table
 	 */

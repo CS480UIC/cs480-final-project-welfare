@@ -2,7 +2,7 @@ package entity1.service;
 
 
 import entity1.dao.Entity1Dao;
-import entity1.domain.Entity1;
+import entity1.domain.Income;
 
 /**
  * logic functions such as register, login
@@ -19,9 +19,9 @@ public class Entity1Service {
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
-	public void create(Entity1 form) throws Entity1Exception, ClassNotFoundException, InstantiationException, IllegalAccessException{
+	public void create(Income form) throws Entity1Exception, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		// check the primary key of Entity1
-		Entity1 entity1 = entity1Dao.findByUsername(form.getUsername());
+		Income entity1 = entity1Dao.findByUsername(form.getUsername());
 		if(entity1.getUsername()!=null && entity1.getUsername().equals(form.getUsername())) throw new Entity1Exception("This user name has been registered!");
 		entity1Dao.add(form);
 	}
@@ -34,8 +34,8 @@ public class Entity1Service {
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
-	public void login(Entity1 form) throws Entity1Exception, ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Entity1 user = entity1Dao.findByUsername(form.getUsername());
+	public void login(Income form) throws Entity1Exception, ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Income user = entity1Dao.findByUsername(form.getUsername());
 		if(user.getUsername()==null) throw new Entity1Exception("The user is not in the database");
 		
 		String password = user.getPassword();

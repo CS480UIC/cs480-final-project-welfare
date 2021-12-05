@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.domain.Entity1;
+import entity1.domain.Income;
 import entity1.service.Entity1Exception;
 import entity1.service.Entity1Service;
 
@@ -43,7 +43,7 @@ public class Entity1ServletCreate extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Entity1Service entity1service = new Entity1Service();
 		Map<String,String[]> paramMap = request.getParameterMap();
-		Entity1 form = new Entity1();
+		Income form = new Income();
 		List<String> info = new ArrayList<String>();
 
 		for(String name : paramMap.keySet()) {
