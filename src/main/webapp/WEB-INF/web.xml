@@ -104,6 +104,39 @@
     <servlet-name>IncomeServletCreate</servlet-name>
     <url-pattern>/IncomeServletCreate</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>IncomeServletRead</display-name>
+    <servlet-name>IncomeServletRead</servlet-name>
+    <servlet-class>income.web.servlet.IncomeServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncomeServletRead</servlet-name>
+    <url-pattern>/IncomeServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>IncomeServletDelete</display-name>
+    <servlet-name>IncomeServletDelete</servlet-name>
+    <servlet-class>income.web.servlet.IncomeServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncomeServletDelete</servlet-name>
+    <url-pattern>/IncomeServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>IncomeServletUpdate</display-name>
+    <servlet-name>IncomeServletUpdate</servlet-name>
+    <servlet-class>income.web.servlet.IncomeServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncomeServletUpdate</servlet-name>
+    <url-pattern>/IncomeServletUpdate</url-pattern>
+  </servlet-mapping>
 
   <servlet>
     <description></description>

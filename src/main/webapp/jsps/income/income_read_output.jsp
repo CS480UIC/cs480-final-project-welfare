@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Income Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,16 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Income Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	recipient_ID    :<input type="text" name="recipientID" value="${income.recipient_ID }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	total_gross：<input type="text" name="grossIncome" value="${income.total_gross }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	total_net	：<input type="text" name="netIncome" value="${income.total_net }" disabled/>
+	<br/>
+	investments	：<input type="text" name="investments" value="${income.investments }" disabled/>
 	<br/>
 </form>
 

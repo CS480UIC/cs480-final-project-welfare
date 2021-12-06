@@ -22,9 +22,9 @@
   
   <body>
   <h1>Update Income</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/IncomeServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update ID   :<input type="text" name="username" value="${form.ID }"/>
+	Update ID   :<input type="text" name="ID" value="${form.ID }"/>
 	<span style="color: red; font-weight: 900">${errors.ID }</span>
 	<br/>
 	<input type="submit" value="Update Income"/>

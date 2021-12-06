@@ -21,27 +21,37 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Income</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	recipient_ID    :<input type="text" name="recipientID" value="${income.recipient_ID }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	total_gross：<input type="text" name="grossIncome" value="${income.total_gross }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	total_net	：<input type="text" name="netIncome" value="${income.total_net }" disabled/>
+	<br/>
+	investments	：<input type="text" name="investments" value="${income.investments }" disabled/>
 	<br/>
 </form>
-<h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<h1>Update Income values below</h1>
+<form action="<c:url value='/IncomeServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="recipient_ID" value="${form.recipient_ID }"/>
+				
+	recipient_ID    :<input type="text" name="recipientID" value="${income.recipient_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.total_gross }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	total_gross：<input type="text" name="grossIncome" value="${form.total_gross }" />
+	<span style="color: red; font-weight: 900">${errors.total_gross }</span>
 	<br/>
+	total_net	：<input type="text" name="netIncome" value="${form.total_net }" />
+	<span style="color: red; font-weight: 900">${errors.total_net }</span>
+	<br/>
+	investments	：<input type="text" name="investments" value="${form.investments }" />
+	<span style="color: red; font-weight: 900">${errors.investments }</span>
+	<br/>
+	
+	
 	<input type="submit" value="Update Entity1"/>
 </form>
 
