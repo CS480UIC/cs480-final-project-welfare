@@ -53,7 +53,9 @@
 			<a href="<c:url value='/jsps/housingprogram/housingmenu.jsp'/>" target="_parent">CRUD Housing</a> |&nbsp;
 			<a href="<c:url value='/jsps/eligibility/menu.jsp'/>" target="_parent">CRUD Eligibility</a> |&nbsp; 
 			<a href="<c:url value='/jsps/medical/menu.jsp'/>" target="_parent">CRUD Medical</a> |&nbsp;  
-
+			<a href="<c:url value='/jsps/medicalfacility/medicalfacility_menu.jsp'/>" target="_parent">CRUD MedicalFacility</a> |&nbsp;
+			<a href="<c:url value='/jsps/nutritionalsource/nutritionalsource_menu.jsp'/>" target="_parent">CRUD NutritionalSource</a> |&nbsp;
+		
 		</c:otherwise>
 	</c:choose>
 
