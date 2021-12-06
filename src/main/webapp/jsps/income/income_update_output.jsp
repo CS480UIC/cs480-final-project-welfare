@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Update Income</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -39,7 +39,7 @@
 				<input type="hidden" name="recipient_ID" value="${form.recipient_ID }"/>
 				
 	recipient_ID    :<input type="text" name="recipientID" value="${income.recipient_ID }"/>
-	<span style="color: red; font-weight: 900">${errors.total_gross }</span>
+	<span style="color: red; font-weight: 900">${errors.recipient_ID }</span>
 	<br/>
 	total_gross：<input type="text" name="grossIncome" value="${form.total_gross }" />
 	<span style="color: red; font-weight: 900">${errors.total_gross }</span>
