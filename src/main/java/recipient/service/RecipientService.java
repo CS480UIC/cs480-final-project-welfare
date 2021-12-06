@@ -47,14 +47,5 @@ public class RecipientService {
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
-	public void login(Recipient form) throws RecipientException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Recipient user = entity1Dao.findByID(form.getUsername());
-		if(user.getUsername()==null) throw new RecipientException("The user is not in the database");
-		
-		String password = user.getPassword();
-		
-		if(password!=null && !password.equals(form.getPassword()))
-			throw new RecipientException(" The password is not right");
-		
-	}
+
 }
