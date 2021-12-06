@@ -2,6 +2,57 @@
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
+  
+       <servlet>
+    <description></description>
+    <display-name>RecipientServletCreate</display-name>
+    <servlet-name>RecipientServletCreate</servlet-name>
+    <servlet-class>recipient.web.servlet.RecipientServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientServletCreate</servlet-name>
+    <url-pattern>/RecipientServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+    <description></description>
+    <display-name>RecipientServletDelete</display-name>
+    <servlet-name>RecipientServletDelete</servlet-name>
+    <servlet-class>recipient.web.servlet.RecipientServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientServletDelete</servlet-name>
+    <url-pattern>/RecipientServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>RecipientServletRead</display-name>
+    <servlet-name>RecipientServletRead</servlet-name>
+    <servlet-class>recipient.web.servlet.RecipientServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientServletRead</servlet-name>
+    <url-pattern>/RecipientServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+      <servlet>
+    <description></description>
+    <display-name>RecipientServletUpdate</display-name>
+    <servlet-name>RecipientServletUpdate</servlet-name>
+    <servlet-class>recipient.web.servlet.RecipientServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientServletUpdate</servlet-name>
+    <url-pattern>/RecipientServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
   <servlet>
     <description></description>
     <display-name>Entity1ServletCreate</display-name>
