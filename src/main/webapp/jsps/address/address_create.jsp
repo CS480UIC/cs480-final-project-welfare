@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create a Address</h1>
-<form action="<c:url value='/RecipientServletCreate'/>" method="post">
+<form action="<c:url value='/AddressServletCreate'/>" method="post">
 	recipient_ID    :<input type="text" name="recipientID" value="${form.recipientID }"/>
 	<span style="color: red; font-weight: 900">${errors.recipientID }</span>
 	<br/>

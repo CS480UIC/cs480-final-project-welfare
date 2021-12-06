@@ -12,12 +12,12 @@ import java.sql.SQLException;
 //import java.util.ArrayList;
 //import java.util.List;
 
-import entity1.domain.Income;
+import entity1.domain.Address;
 
 /**
  * DDL functions performed in database
  */
-public class Entity1Dao {
+public class AddressDao {
 	
 	/**
 	 * user name to connect to the database 
@@ -29,8 +29,8 @@ public class Entity1Dao {
 	 */
 	private String MySQL_password = "pass123"; //TODO change password
 
-	public Income findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Income entity1 = new Income();
+	public Address findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Address entity1 = new Address();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bookstore", MySQL_user, MySQL_password);
@@ -62,7 +62,7 @@ public class Entity1Dao {
 	 * @throws InstantiationException 
 	 */
 	
-	public void add(Income form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void add(Address form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bookstore", MySQL_user, MySQL_password);
@@ -86,7 +86,7 @@ public class Entity1Dao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void update(Income form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Address form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bookstore", MySQL_user, MySQL_password);
