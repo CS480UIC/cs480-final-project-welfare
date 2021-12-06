@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.domain.Address;
-import entity1.service.AddressException;
-import entity1.service.AddressService;
+import entity1.domain.Entity1;
+import entity1.service.Entity1Exception;
+import entity1.service.Entity1Service;
 
 
 /**
@@ -41,9 +41,9 @@ public class Entity1ServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AddressService entity1service = new AddressService();
+		Entity1Service entity1service = new Entity1Service();
 		Map<String,String[]> paramMap = request.getParameterMap();
-		Address form = new Address();
+		Entity1 form = new Entity1();
 		List<String> info = new ArrayList<String>();
 
 		for(String name : paramMap.keySet()) {
@@ -58,7 +58,7 @@ public class Entity1ServletCreate extends HttpServlet {
 			entity1service.create(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
 			
-		} catch (ClassNotFoundException | AddressException e) {
+		} catch (ClassNotFoundException | Entity1Exception e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
 			e.printStackTrace();

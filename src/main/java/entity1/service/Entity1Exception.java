@@ -1,17 +1,17 @@
 package entity1.service;
 
-public class AddressException extends Exception {
+public class Entity1Exception extends Exception {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public AddressException() {
+	public Entity1Exception() {
 		super();
 	}
 
-	public AddressException(String message) {
+	public Entity1Exception(String message) {
 		super(message);
 	}
 
