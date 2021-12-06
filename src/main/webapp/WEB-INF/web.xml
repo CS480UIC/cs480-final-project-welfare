@@ -3,6 +3,55 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
   
+    <servlet>
+    <description></description>
+    <display-name>AdministratorServletCreate</display-name>
+    <servlet-name>AdministratorServletCreate</servlet-name>
+    <servlet-class>administrator.web.servlet.AdministratorServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdministratorServletCreate</servlet-name>
+    <url-pattern>/AdministratorServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+    <description></description>
+    <display-name>AdministratorServletDelete</display-name>
+    <servlet-name>AdministratorServletDelete</servlet-name>
+    <servlet-class>administrator.web.servlet.AdministratorServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdministratorServletDelete</servlet-name>
+    <url-pattern>/AdministratorServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>AdministratorServletRead</display-name>
+    <servlet-name>AdministratorServletRead</servlet-name>
+    <servlet-class>administrator.web.servlet.AdministratorServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdministratorServletRead</servlet-name>
+    <url-pattern>/AdministratorServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+      <servlet>
+    <description></description>
+    <display-name>AdministratorServletUpdate</display-name>
+    <servlet-name>AdministratorServletUpdate</servlet-name>
+    <servlet-class>administrator.web.servlet.AdministratorServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdministratorServletUpdate</servlet-name>
+    <url-pattern>/AdministratorServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
        <servlet>
     <description></description>
     <display-name>RecipientServletCreate</display-name>
