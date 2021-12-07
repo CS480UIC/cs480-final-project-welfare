@@ -48,7 +48,8 @@ public class NutritionalServletUpdate extends HttpServlet {
 		{
 			try {
 				entity1 = entity1dao.findByProgram_ID(Integer.parseInt(request.getParameter("program_ID")));
-			} catch (ClassNotFoundException e1) {
+				System.out.print(Integer.parseInt(request.getParameter("program_ID")));
+				} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
 				e1.printStackTrace();
@@ -57,7 +58,7 @@ public class NutritionalServletUpdate extends HttpServlet {
 			}
 
 			if(entity1.getProgram_ID()!=null){
-				request.setAttribute("entity1", entity1);
+				request.setAttribute("nutritional", entity1);
 				request.getRequestDispatcher("/jsps/nutritionalprogram/nutritional_update_output.jsp").forward(request, response);
 
 			}

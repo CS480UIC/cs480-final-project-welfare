@@ -460,6 +460,49 @@
     <url-pattern>/HousingServletUpdate</url-pattern>
   </servlet-mapping>
 
+ <servlet>
+    <description></description>
+    <display-name>NutritionalServletCreate</display-name>
+    <servlet-name>NutritionalServletCreate</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletCreate</servlet-name>
+    <url-pattern>/NutritionalServletCreate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>NutritionalServletRead</display-name>
+    <servlet-name>NutritionalServletRead</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletRead</servlet-name>
+    <url-pattern>/NutritionalServletRead</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <description></description>
+    <display-name>NutritionalServletDelete</display-name>
+    <servlet-name>NutritionalServletDelete</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletDelete</servlet-name>
+    <url-pattern>/NutritionalServletDelete</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+    <description></description>
+    <display-name>NutritionalServletUpdate</display-name>
+    <servlet-name>NutritionalServletUpdate</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletUpdate</servlet-name>
+    <url-pattern>/NutritionalServletUpdate</url-pattern>
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>findAll</display-name>
