@@ -40,9 +40,9 @@
     <br>
     <h2>Complex Queries</h2>
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list the first and last names of the recipients with their net incomes</a>&nbsp;&nbsp;
+    <a href="<c:url value='/RecipientsNameNetIncome'/>" target="body">Please list the first and last names of the recipients with their net incomes</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list the recipients' id who are eligible for all medical programs </a>&nbsp;&nbsp;
+    <a href="<c:url value='/RecipientsEligible'/>" target="body">Please list the recipients' id who are eligible for all medical programs </a>&nbsp;&nbsp;
     <br>
     <a href="<c:url value='/RecipientInvestments'/>" target="body">Please list all the recipients' ID who have made money from investments</a>&nbsp;&nbsp;
     <br>

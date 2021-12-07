@@ -622,6 +622,30 @@
     <url-pattern>/RecipientInvestments</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>RecipientsEligible</display-name>
+    <servlet-name>RecipientsEligible</servlet-name>
+    
+    <servlet-class>income.web.servlet.RecipientsEligible</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientsEligible</servlet-name>
+    <url-pattern>/RecipientsEligible</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>RecipientsNameNetIncome</display-name>
+    <servlet-name>RecipientsNameNetIncome</servlet-name>
+    
+    <servlet-class>recipient.web.servlet.RecipientsNameNetIncome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientsNameNetIncome</servlet-name>
+    <url-pattern>/RecipientsNameNetIncome</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
