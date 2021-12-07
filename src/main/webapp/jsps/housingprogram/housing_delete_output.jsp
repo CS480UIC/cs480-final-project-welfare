@@ -21,19 +21,27 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Housing Program</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/HousingServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
-	<br/>
+		<input type="hidden" name="program_ID" value="${housing.program_ID }"/>
+	program_name    :<input type="text" name="program_name" value="${housing.program_name }" disabled/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	program_ID：<input type="text" name="program_ID" value="${housing.program_ID }" disabled/>
+	
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	administrator_ID：<input type="text" name="administrator_ID" value="${housing.administrator_ID }" disabled/>
+	
+	<br/>
+	housing_size	：<input type="text" name="housing_size" value="${housing.housing_size }" disabled/>
+	
+	<br/>
+	funds	：<input type="text" name="funds" value="${housing.funds }" disabled/>
+	
+	<br/>
+	<input type="submit" value="Delete Housing Program"/>
 </form>
 
 </body>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Housing Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,24 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Housing Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	
+	program_name    :<input type="text" name="program_name" value="${housing.program_name }" disabled/>
+	
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	program_ID：<input type="text" name="program_ID" value="${housing.program_ID }" disabled/>
+	
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	administrator_ID：<input type="text" name="administrator_ID" value="${housing.administrator_ID }" disabled/>
+	
+	<br/>
+	housing_size	：<input type="text" name="housing_size" value="${housing.housing_size }" disabled/>
+	
+	<br/>
+	funds	：<input type="text" name="funds" value="${housing.funds }" disabled/>
+	
 	<br/>
 </form>
 

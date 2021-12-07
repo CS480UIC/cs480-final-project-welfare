@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update Housing Program</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/HousingServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update program_ID   :<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>

@@ -1,8 +1,15 @@
 /address/
 /administrator/
 /entity1/
+/housing/
 /income/
 /init/
 /nutritional/
 /recipient/
 /user/
+<<<<<<< HEAD
+=======
+/eligibility/
+/medical/
+/medicalfacility/
+>>>>>>> branch 'main' of git@github.com:CS480UIC/cs480-final-project-welfare.git
