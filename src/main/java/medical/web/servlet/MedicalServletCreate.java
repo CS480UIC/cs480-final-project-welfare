@@ -50,10 +50,10 @@ public class MedicalServletCreate extends HttpServlet {
 			String[] values = paramMap.get(name);
 			info.add(values[0]);
 		}
-		form.setProgram_ID(Integer.parseInt(info.get(0)));
-		form.setProgram_name(info.get(1));
-		form.setAdministrator_ID(Integer.parseInt(info.get(2)));
-		form.setFunds(Integer.parseInt(info.get(3)));
+		form.setProgram_ID(Integer.parseInt(request.getParameter("program_ID")));
+		form.setProgram_name(request.getParameter("program_name"));
+		form.setAdministrator_ID(Integer.parseInt(request.getParameter("administrator_ID")));
+		form.setFunds(Integer.parseInt(request.getParameter("funds")));
 		
 		try {
 			medicalservice.create(form);

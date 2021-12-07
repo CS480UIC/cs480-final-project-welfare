@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Medical</title>
+    <title>Update Medical</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -24,21 +24,27 @@
   <h1>Update Medical</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Program ID    :<input type="text" name="program_id" value="${medial.program_id }" disabled/>
+	Program ID    :<input type="text" name="program_ID" value="${medical.program_ID }" disabled/>
 	<br/>
 	
 	Program Name：<input type="text" name="program_name" value="${medical.program_name }" disabled />
 	<br/>
+	
+	Administrator ID    :<input type="text" name="administrator_ID" value="${medical.administrator_ID }" disabled/>
+	<br/>
+	
+	Funds：<input type="text" name="funds" value="${medical.funds }" disabled />
+	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/MedicalServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="program_id" value="${medical.program_id }"/>
+				<input type="hidden" name="program_id" value="${medical.program_ID }"/>
 	Program Name：<input type="text" name="program_name" value="${form.program_name }"/>
 	<span style="color: red; font-weight: 900">${errors.program_name }</span>
 	<br/>
-	Source	：<input type="text" name="source" value="${form.source }"/>
-	<span style="color: red; font-weight: 900">${errors.source }</span>
+	Administrator ID	：<input type="text" name="administrator_ID" value="${form.administrator_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.administrator_ID }</span>
 	<br/>
 	Funds	：<input type="text" name="funds" value="${form.funds }"/>
 	<span style="color: red; font-weight: 900">${errors.funds }</span>

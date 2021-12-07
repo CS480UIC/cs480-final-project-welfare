@@ -41,7 +41,7 @@ public class MedicalServletRead extends HttpServlet {
 		MedicalDao medicalDao = new MedicalDao();
 		
 		try {
-			medical = medicalDao.findByProgramID(Integer.parseInt(request.getParameter("program_id")));
+			medical = medicalDao.findByProgramID(Integer.parseInt(request.getParameter("program_ID")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {

@@ -40,7 +40,7 @@ public class MedicalDao {
 
 		    while(resultSet.next()){
 		    	Integer id = Integer.parseInt(resultSet.getString("program_ID"));
-		    	if(id == program_ID){
+		    	if(id.equals(program_ID)){
 		    		medical.setProgram_ID(Integer.parseInt(resultSet.getString("program_ID")));
 		    		medical.setProgram_name(resultSet.getString("program_name"));
 		    		medical.setAdministrator_ID(Integer.parseInt(resultSet.getString("administrator_ID")));
@@ -67,7 +67,7 @@ public class MedicalDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
 			
-			String sql = "insert into medical values(?,?,?,?)";
+			String sql = "insert into medical (program_ID,program_name,administrator_ID,funds)values(?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getProgram_ID());
 		    preparestatement.setString(2,form.getProgram_name());
@@ -92,7 +92,7 @@ public class MedicalDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE medical SET program_name = ?, administrator_ID = ?, funds = ? where program_ID = ?;";
+			String sql = "UPDATE medical SET program_name = ?, administrator_ID = ?, funds = ? where program_ID=?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			preparestatement.setString(1,form.getProgram_name());
 		    preparestatement.setInt(2,form.getAdministrator_ID());

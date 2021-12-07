@@ -47,7 +47,7 @@ public class MedicalServletUpdate extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				medical = medicaldao.findByProgramID(Integer.parseInt(request.getParameter("program_id")));
+				medical = medicaldao.findByProgramID(Integer.parseInt(request.getParameter("program_ID")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {

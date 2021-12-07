@@ -24,9 +24,13 @@
   <h1>Read Medical Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Program ID    :<input type="text" name="program_id" value="${medical.program_id }" disabled/>
+	Program ID    :<input type="text" name="program_ID" value="${medical.program_ID }" disabled/>
 	<br/>
 	Program Name：<input type="text" name="program_name" value="${medical.program_name }" disabled/>
+	<br/>
+	Administrator ID    :<input type="text" name="administrator_ID" value="${medical.administrator_ID }" disabled/>
+	<br/>
+	Funds：<input type="text" name="funds" value="${medical.funds }" disabled/>
 	<br/>
 
 </form>
