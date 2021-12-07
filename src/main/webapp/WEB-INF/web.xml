@@ -414,6 +414,51 @@
     <servlet-name>MedicalFacilityServletDelete</servlet-name>
     <url-pattern>/MedicalFacilityServletDelete</url-pattern>
   </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletCreate</display-name>
+    <servlet-name>HousingServletCreate</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletCreate</servlet-name>
+    <url-pattern>/HousingServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletRead</display-name>
+    <servlet-name>HousingServletRead</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletRead</servlet-name>
+    <url-pattern>/HousingServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletDelete</display-name>
+    <servlet-name>HousingServletDelete</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletDelete</servlet-name>
+    <url-pattern>/HousingServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletUpdate</display-name>
+    <servlet-name>HousingServletUpdate</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletUpdate</servlet-name>
+    <url-pattern>/HousingServletUpdate</url-pattern>
+  </servlet-mapping>
 
   <servlet>
     <description></description>
