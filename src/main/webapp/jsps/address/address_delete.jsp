@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete a Address</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/AddressServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete ID   :<input type="text" name="ID" value="${form.ID }"/>
 	<span style="color: red; font-weight: 900">${errors.ID }</span>

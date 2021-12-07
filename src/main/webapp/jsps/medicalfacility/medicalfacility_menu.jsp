@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Read Address Output</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +22,12 @@
   </head>
   
   <body>
-  <h1>Read Address Output</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	recipient_ID    :<input type="text" name="recipientID" value="${address.recipient_ID }" disabled/>
-	<br/>
-	city    ：<input type="text" name="city" value="${address.city }" disabled/>
-	<br/>
-	state	：<input type="text" name="state" value="${address.state }" disabled/>
-	<br/>
-	street	：<input type="text" name="street" value="${address.street }" disabled/>
-	<br/>
-</form>
-
-<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
-</body>
+    <h1>CRUD operations for MedicalFacility </h1>
+    <br>
+	<a href="<c:url value='/jsps/medicalfacility/medicalfacility_create.jsp'/>" target="_parent">Create MedicalFacility</a> |&nbsp; 
+	<a href="<c:url value='/jsps/medicalfacility/medicalfacility_read.jsp'/>" target="_parent">Read MedicalFacility</a> |&nbsp;
+	<a href="<c:url value='/jsps/medicalfacility/medicalfacility_update.jsp'/>" target="_parent">Update MedicalFacility</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/medicalfacility/medicalfacility_delete.jsp'/>" target="_parent">Delete MedicalFacility</a>	
+	    
+  </body>
 </html>

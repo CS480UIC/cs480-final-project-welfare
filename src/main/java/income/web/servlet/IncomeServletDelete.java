@@ -1,4 +1,4 @@
-package entity1.web.servlet;
+package income.web.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -6,21 +6,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.Entity1Dao;
-import entity1.domain.Entity1;
+import income.dao.IncomeDao;
+import income.domain.Income;
 
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Entity1ServletDelete extends HttpServlet {
+public class IncomeServletDelete extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Entity1ServletDelete() {
+    public IncomeServletDelete() {
         super();
     }
     
@@ -36,12 +36,12 @@ public class Entity1ServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String method = request.getParameter("method");
-		Entity1Dao entity1Dao = new Entity1Dao();
-		Entity1 entity1 = null;
+		IncomeDao incomeDao = new IncomeDao();
+		Income income = null;
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByUsername(request.getParameter("username"));
+				income = incomeDao.findByRecipientID(Integer.parseInt(request.getParameter("ID")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -50,20 +50,20 @@ public class Entity1ServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(entity1.getUsername()!=null){
-						System.out.println(entity1);
-						request.setAttribute("entity1", entity1);
-						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
+			if(income.getRecipient_ID()!=null){
+						System.out.println(income);
+						request.setAttribute("income", income);
+						request.getRequestDispatcher("/jsps/income/income_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "income not found");
+				request.getRequestDispatcher("/jsps/income/income_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("username"));
+				incomeDao.delete(request.getParameter("recipient_ID"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -71,8 +71,8 @@ public class Entity1ServletDelete extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Income Deleted");
+			request.getRequestDispatcher("/jsps/income/income_read_output.jsp").forward(request, response);
 		}
 	}
 }

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Address Output</title>
+    <title>Read Entity Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,16 +21,14 @@
   </head>
   
   <body>
-  <h1>Read Address Output</h1>
+  <h1>Read Entity Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	recipient_ID    :<input type="text" name="recipientID" value="${address.recipient_ID }" disabled/>
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
 	<br/>
-	city    ：<input type="text" name="city" value="${address.city }" disabled/>
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	state	：<input type="text" name="state" value="${address.state }" disabled/>
-	<br/>
-	street	：<input type="text" name="street" value="${address.street }" disabled/>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
 </form>
 

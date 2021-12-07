@@ -1,8 +1,7 @@
-package entity1.web.servlet;
+package income.web.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -11,20 +10,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.Entity1Dao;
-import entity1.domain.Entity1;
+import income.dao.IncomeDao;
+import income.domain.Income;
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Entity1ServletUpdate extends HttpServlet {
+public class IncomeServletUpdate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public Entity1ServletUpdate() {
+	public IncomeServletUpdate() {
 		super();
 	}
 
@@ -41,13 +40,13 @@ public class Entity1ServletUpdate extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String method = request.getParameter("method");
-		Entity1Dao entity1dao = new Entity1Dao();
-		Entity1 entity1 = null;
+		IncomeDao incomedao = new IncomeDao();
+		Income income = null;
 
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1dao.findByUsername(request.getParameter("username"));
+				income = incomedao.findByRecipientID(Integer.parseInt(request.getParameter("ID")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -56,32 +55,38 @@ public class Entity1ServletUpdate extends HttpServlet {
 				e1.printStackTrace();
 			}
 
-			if(entity1.getUsername()!=null){
-				request.setAttribute("entity1", entity1);
-				request.getRequestDispatcher("/jsps/entity1/entity1_update_output.jsp").forward(request, response);
+			if(income.getRecipient_ID()!=null){
+				request.setAttribute("income", income);
+				request.getRequestDispatcher("/jsps/income/income_update_output.jsp").forward(request, response);
 
 			}
 			else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "Income not found");
+				request.getRequestDispatcher("/jsps/income/income_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("update"))
 		{
 			Map<String,String[]> paramMap = request.getParameterMap();
-			Entity1 form = new Entity1();
+			Income form = new Income();
 			List<String> info = new ArrayList<String>();
 
 			for(String name : paramMap.keySet()) {
 				String[] values = paramMap.get(name);
 				info.add(values[0]);
 			}
-			form.setPassword(info.get(2));
-			form.setEmail(info.get(3));
-			form.setUsername(request.getParameter("username"));
+//			form.setPassword(info.get(2));
+//			form.setEmail(info.get(3));
+//			form.setUsername(request.getParameter("username"));
 
+			//TODO fix
+			form.setRecipient_ID(Integer.parseInt(request.getParameter("recipientID")));
+			form.setTotal_gross(Integer.parseInt(request.getParameter("grossIncome")));
+			form.setTotal_net(Integer.parseInt(request.getParameter("netIncome")));	
+			form.setInvestments(Integer.parseInt(request.getParameter("investments")));	
+			
 			try {
-				entity1dao.update(form);
+				incomedao.update(form);
 
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
@@ -90,8 +95,8 @@ public class Entity1ServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Updated");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Income Updated");
+			request.getRequestDispatcher("/jsps/income/income_read_output.jsp").forward(request, response);
 		}
 	}
 }

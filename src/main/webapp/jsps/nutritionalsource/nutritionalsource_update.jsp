@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Address Output</title>
+    <title>Update NutritionalSource</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,13 @@
   </head>
   
   <body>
-  <h1>Read Address Output</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	recipient_ID    :<input type="text" name="recipientID" value="${address.recipient_ID }" disabled/>
+  <h1>Update NutritionalSource</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Update Program ID   :<input type="text" name="program_ID" value="${form.program_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-	city    ：<input type="text" name="city" value="${address.city }" disabled/>
-	<br/>
-	state	：<input type="text" name="state" value="${address.state }" disabled/>
-	<br/>
-	street	：<input type="text" name="street" value="${address.street }" disabled/>
-	<br/>
+	<input type="submit" value="Update NutritionalSource"/>
 </form>
-
-<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
-</body>
+  </body>
 </html>

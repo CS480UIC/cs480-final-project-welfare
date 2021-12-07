@@ -237,6 +237,51 @@
     <servlet-name>IncomeServletUpdate</servlet-name>
     <url-pattern>/IncomeServletUpdate</url-pattern>
   </servlet-mapping>
+  
+  
+ <servlet>
+    <description></description>
+    <display-name>AddressServletCreate</display-name>
+    <servlet-name>AddressServletCreate</servlet-name>
+    <servlet-class>address.web.servlet.AddressServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddressServletCreate</servlet-name>
+    <url-pattern>/AddressServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddressServletRead</display-name>
+    <servlet-name>AddressServletRead</servlet-name>
+    <servlet-class>address.web.servlet.AddressServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddressServletRead</servlet-name>
+    <url-pattern>/AddressServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddressServletDelete</display-name>
+    <servlet-name>AddressServletDelete</servlet-name>
+    <servlet-class>address.web.servlet.AddressServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddressServletDelete</servlet-name>
+    <url-pattern>/AddressServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddressServletUpdate</display-name>
+    <servlet-name>AddressServletUpdate</servlet-name>
+    <servlet-class>address.web.servlet.AddressServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddressServletUpdate</servlet-name>
+    <url-pattern>/AddressServletUpdate</url-pattern>
+  </servlet-mapping>
 
   <servlet>
     <description></description>
