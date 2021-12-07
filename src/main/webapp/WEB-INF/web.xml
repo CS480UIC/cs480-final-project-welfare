@@ -3,6 +3,52 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
   
+     <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletCreate</display-name>
+    <servlet-name>NutritionalSourceServletCreate</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletCreate</servlet-name>
+    <url-pattern>/NutritionalSourceServletCreate</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletDelete</display-name>
+    <servlet-name>NutritionalSourceServletDelete</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletDelete</servlet-name>
+    <url-pattern>/NutritionalSourceServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletRead</display-name>
+    <servlet-name>NutritionalSourceServletRead</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletRead</servlet-name>
+    <url-pattern>/NutritionalSourceServletRead</url-pattern>
+  </servlet-mapping>
+  
+    
+      <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletUpdate</display-name>
+    <servlet-name>NutritionalSourceServletUpdate</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletUpdate</servlet-name>
+    <url-pattern>/NutritionalSourceServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
     <servlet>
     <description></description>
     <display-name>AdministratorServletCreate</display-name>
@@ -414,7 +460,95 @@
     <servlet-name>MedicalFacilityServletDelete</servlet-name>
     <url-pattern>/MedicalFacilityServletDelete</url-pattern>
   </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletCreate</display-name>
+    <servlet-name>HousingServletCreate</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletCreate</servlet-name>
+    <url-pattern>/HousingServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletRead</display-name>
+    <servlet-name>HousingServletRead</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletRead</servlet-name>
+    <url-pattern>/HousingServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletDelete</display-name>
+    <servlet-name>HousingServletDelete</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletDelete</servlet-name>
+    <url-pattern>/HousingServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HousingServletUpdate</display-name>
+    <servlet-name>HousingServletUpdate</servlet-name>
+    <servlet-class>housing.web.servlet.HousingServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HousingServletUpdate</servlet-name>
+    <url-pattern>/HousingServletUpdate</url-pattern>
+  </servlet-mapping>
 
+ <servlet>
+    <description></description>
+    <display-name>NutritionalServletCreate</display-name>
+    <servlet-name>NutritionalServletCreate</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletCreate</servlet-name>
+    <url-pattern>/NutritionalServletCreate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>NutritionalServletRead</display-name>
+    <servlet-name>NutritionalServletRead</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletRead</servlet-name>
+    <url-pattern>/NutritionalServletRead</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <description></description>
+    <display-name>NutritionalServletDelete</display-name>
+    <servlet-name>NutritionalServletDelete</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletDelete</servlet-name>
+    <url-pattern>/NutritionalServletDelete</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+    <description></description>
+    <display-name>NutritionalServletUpdate</display-name>
+    <servlet-name>NutritionalServletUpdate</servlet-name>
+    <servlet-class>nutritional.web.servlet.NutritionalServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalServletUpdate</servlet-name>
+    <url-pattern>/NutritionalServletUpdate</url-pattern>
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>findAll</display-name>

@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete a Housing Program</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/HousingServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete program_ID   :<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>

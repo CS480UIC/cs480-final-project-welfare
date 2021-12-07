@@ -23,7 +23,7 @@
   <body>
   <h1>Read Nutritional Program</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/AdministratorServletRead'/>" method="post">
+<form action="<c:url value='/NutritionalServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	program_ID    :<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>

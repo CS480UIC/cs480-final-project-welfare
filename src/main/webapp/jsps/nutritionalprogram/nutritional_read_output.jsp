@@ -21,14 +21,20 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Nutritional Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	program_name    :<input type="text" name="program_name" value="${nutritional.program_name }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.program_name }</span>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	program_ID：<input type="text" name="program_ID" value="${nutritional.program_ID }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	administrator_ID	：<input type="text" name="administrator_ID" value="${nutritional.administrator_ID }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.administrator_ID }</span>
+	<br/>
+	funds	：<input type="text" name="funds" value="${nutritional.funds }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.funds }</span>
 	<br/>
 </form>
 

@@ -42,7 +42,7 @@ public class UserServletLogin extends HttpServlet {
 		User user = null;
 		String pwd=null;
 		try {
-			user = userdao.findByRecipientID(request.getParameter("username"));
+			user = userdao.findByUsername(request.getParameter("username"));
 			pwd = request.getParameter("password");
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();

@@ -23,17 +23,12 @@
   <body>
   <h1>Read Housing Program</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/AdministratorServletRead'/>" method="post">
+<form action="<c:url value='/HousingServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	program_ID    :<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
+	
 	<input type="submit" value="Read Housing Program"/>
 </form>
   </body>

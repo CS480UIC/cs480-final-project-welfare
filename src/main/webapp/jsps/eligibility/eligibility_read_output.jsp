@@ -24,7 +24,13 @@
   <h1>Read Eligibility Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Recipient ID    :<input type="text" name="recipient_id" value="${eligibility.recipient_id }" disabled/>
+	Recipient ID    :<input type="text" name="recipientID" value="${eligibility.recipient_ID }" disabled/>
+	<br/>
+	Citizenship：<input type="text" name="citizenship" value="${eligibility.citizenship }" disabled/>
+	<br/>
+	Residency	：<input type="text" name="residency" value="${eligibility.residency }" disabled/>
+	<br/>
+	Family	：<input type="text" name="family" value="${eligibility.family }" disabled/>
 	<br/>
 </form>
 

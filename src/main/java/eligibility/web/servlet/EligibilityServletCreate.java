@@ -53,7 +53,7 @@ public class EligibilityServletCreate extends HttpServlet {
 		form.setRecipient_ID(Integer.parseInt(info.get(0)));
 		form.setCitizenship(info.get(1));
 		form.setResidency(info.get(2));
-		form.setFamily(info.get(3));
+		form.setFamily(Integer.parseInt(info.get(3)));
 		
 		try {
 			eligibilityservice.create(form);
