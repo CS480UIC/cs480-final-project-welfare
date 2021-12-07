@@ -1,6 +1,8 @@
 package nutritional.service;
 
 
+import java.util.List;
+
 import nutritional.dao.NutritionalDao;
 import nutritional.domain.Nutritional;
 
@@ -24,6 +26,11 @@ public class NutritionalService {
 		Nutritional entity1 = nutritionalDao.findByProgram_ID(form.getProgram_ID());
 		if(entity1.getProgram_ID()!=null && entity1.getProgram_ID().equals(form.getProgram_ID())) throw new NutritionalException("This program name has been registered!");
 		nutritionalDao.add(form);
+	}
+	
+	public List<Object> findNutritionalFund() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return nutritionalDao.findNutritionalFund();
+		
 	}
 
 }

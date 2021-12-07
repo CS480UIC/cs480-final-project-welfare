@@ -1,6 +1,8 @@
 package income.service;
 
 
+import java.util.List;
+
 import income.dao.IncomeDao;
 import income.domain.Income;
 
@@ -24,6 +26,11 @@ public class IncomeService {
 		Income entity1 = incomeDao.findByRecipientID(form.getRecipient_ID());
 		if(entity1.getRecipient_ID()!=null && entity1.getRecipient_ID() == form.getRecipient_ID()) throw new IncomeException("This income recipient has been registered before!");
 		incomeDao.add(form);
+	}
+	
+	public List<Object> findRecipientIncome() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return incomeDao.findRecipientIncome();
+		
 	}
 	
 }

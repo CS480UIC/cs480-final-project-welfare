@@ -549,6 +549,7 @@
     <servlet-name>NutritionalServletUpdate</servlet-name>
     <url-pattern>/NutritionalServletUpdate</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>findAll</display-name>
@@ -560,6 +561,55 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NutritionalFunds</display-name>
+    <servlet-name>NutritionalFunds</servlet-name>
+    
+    <servlet-class>nutritional.web.servlet.NutritionalFunds</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalFunds</servlet-name>
+    <url-pattern>/NutritionalFunds</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RecipientIncomes</display-name>
+    <servlet-name>RecipientIncomes</servlet-name>
+    
+    <servlet-class>income.web.servlet.RecipientIncomes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientIncomes</servlet-name>
+    <url-pattern>/RecipientIncomes</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RecipientGrossIncomes</display-name>
+    <servlet-name>RecipientGrossIncomes</servlet-name>
+    
+    <servlet-class>income.web.servlet.RecipientGrossIncomes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientGrossIncomes</servlet-name>
+    <url-pattern>/RecipientGrossIncomes</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Managers</display-name>
+    <servlet-name>Managers</servlet-name>
+    
+    <servlet-class>administrators.web.servlet.Managers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Managers</servlet-name>
+    <url-pattern>/Managers</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

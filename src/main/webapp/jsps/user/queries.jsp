@@ -28,13 +28,13 @@
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the nutritional funds over 500000 or under 250000</a>&nbsp;&nbsp;
+    <a href="<c:url value='/NutritionalFunds'/>" target="body">Please list all the nutritional funds over 500000 or under 250000</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the recipient incomes between 10000 or under 30000</a>&nbsp;&nbsp;
+    <a href="<c:url value='/RecipientIncomes'/>" target="body">Please list all the recipient incomes between 10000 or under 30000</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the recipient ID's with total gross incomes greater 10000 and have investments over 0</a>&nbsp;&nbsp;
+    <a href="<c:url value='/RecipientGrossIncomes'/>" target="body">Please list all the recipient ID's with total gross incomes greater 10000 and have investments over 0</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the managers' first and last names</a>&nbsp;&nbsp;
+    <a href="<c:url value='/Managers'/>" target="body">Please list all the managers' first and last names</a>&nbsp;&nbsp;
     <br>
     
     <br>

@@ -1,5 +1,14 @@
 /.DS_Store
+/address/
+/administrator/
 /eligibility/
 /entity1/
+/housing/
+/income/
+/init/
 /medical/
 /medicalfacility/
+/nutritional/
+/nutritionalsource/
+/recipient/
+/user/
