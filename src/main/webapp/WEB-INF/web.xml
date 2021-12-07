@@ -3,6 +3,52 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
   
+     <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletCreate</display-name>
+    <servlet-name>NutritionalSourceServletCreate</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletCreate</servlet-name>
+    <url-pattern>/NutritionalSourceServletCreate</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletDelete</display-name>
+    <servlet-name>NutritionalSourceServletDelete</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletDelete</servlet-name>
+    <url-pattern>/NutritionalSourceServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletRead</display-name>
+    <servlet-name>NutritionalSourceServletRead</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletRead</servlet-name>
+    <url-pattern>/NutritionalSourceServletRead</url-pattern>
+  </servlet-mapping>
+  
+    
+      <servlet>
+    <description></description>
+    <display-name>NutritionalSourceServletUpdate</display-name>
+    <servlet-name>NutritionalSourceServletUpdate</servlet-name>
+    <servlet-class>nutritionalsource.web.servlet.NutritionalSourceServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NutritionalSourceServletUpdate</servlet-name>
+    <url-pattern>/NutritionalSourceServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
     <servlet>
     <description></description>
     <display-name>AdministratorServletCreate</display-name>

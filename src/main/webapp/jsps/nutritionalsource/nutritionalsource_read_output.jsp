@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read nutritionalsource Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,14 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read nutritionalsource Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	program_ID    :<input type="text" name="program_ID" value="${nutritionalsource.program_ID }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	nutritionalsource_ID：<input type="text" name="nutritionalsource_ID" value="${nutritionalsource.nutritionalsource_ID }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	source	：<input type="text" name="source" value="${nutritionalsource.source }" disabled/>
 	<br/>
 </form>
 
