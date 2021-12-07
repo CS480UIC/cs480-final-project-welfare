@@ -79,7 +79,7 @@ public class EligibilityServletUpdate extends HttpServlet {
 			form.setRecipient_ID(Integer.parseInt(info.get(1)));
 			form.setCitizenship(info.get(2));
 			form.setResidency(info.get(3));
-			form.setFamily(info.get(4));
+			form.setFamily(Integer.parseInt(info.get(4)));
 
 			try {
 				eligibilitydao.update(form);

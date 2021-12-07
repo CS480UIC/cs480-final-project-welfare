@@ -39,9 +39,8 @@ public class EligibilityServletRead extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Eligibility eligibility = null;
 		EligibilityDao eligibilityDao = new EligibilityDao();
-		
 		try {
-			eligibility = eligibilityDao.findByRecipientID(Integer.parseInt(request.getParameter("recipient_ID")));
+			eligibility = eligibilityDao.findByRecipientID(Integer.parseInt(request.getParameter("ID")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {
@@ -51,13 +50,12 @@ public class EligibilityServletRead extends HttpServlet {
 		}
 		
 		if(eligibility.getRecipient_ID()!=null){
-					System.out.println(eligibility);
-					request.setAttribute("entity1", eligibility);
-					request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+					request.setAttribute("eligibility", eligibility);
+					request.getRequestDispatcher("/jsps/eligibility/eligibility_read_output.jsp").forward(request, response);
 			}
 			else{
 			request.setAttribute("msg", "Entity not found");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsps/eligibility/eligibility_read_output.jsp").forward(request, response);
 		}
 	}
 }

@@ -24,7 +24,7 @@
   <h1>Update Eligibility</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Recipient ID    :<input type="text" name="recipient_id1" value="${eligibility.recipient_id }" disabled/>
+	Recipient ID    :<input type="text" name="recipient_ID" value="${eligibility.recipient_ID }" disabled/>
 	<br/>
 	
 </form>

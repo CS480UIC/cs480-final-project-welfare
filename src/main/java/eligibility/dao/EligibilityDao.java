@@ -13,6 +13,7 @@ import java.sql.SQLException;
 //import java.util.List;
 
 import eligibility.domain.Eligibility;
+import income.domain.Income;
 
 /**
  * DDL functions performed in database
@@ -34,18 +35,19 @@ public class EligibilityDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
-		    String sql = "select * from eligibility where recipient_ID =?";
+		    String sql = "select * from eligibility where recipient_ID=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,recipient_ID);
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	Integer id = Integer.parseInt(resultSet.getString("recipient_ID"));
-		    	if(id == recipient_ID){
-		    		eligibility.setRecipient_ID(Integer.parseInt(resultSet.getString("recipient_ID")));
+		    	
+		    	Integer recipientID = Integer.parseInt(resultSet.getString("recipient_ID"));
+		    	if(recipientID.equals(recipient_ID)){
 		    		eligibility.setCitizenship(resultSet.getString("citizenship"));
 		    		eligibility.setResidency(resultSet.getString("residency"));
-		    		eligibility.setFamily(resultSet.getString("family"));
+		    		eligibility.setFamily(resultSet.getInt("family"));
+		    		eligibility.setRecipient_ID(recipientID);
 		    	}
 		    }
 		    connect.close();
@@ -73,7 +75,7 @@ public class EligibilityDao {
 			preparestatement.setInt(1,form.getRecipient_ID());
 		    preparestatement.setString(2,form.getCitizenship());
 		    preparestatement.setString(3,form.getResidency());
-		    preparestatement.setString(4,form.getFamily());
+		    preparestatement.setInt(4,form.getFamily());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -97,7 +99,7 @@ public class EligibilityDao {
 			PreparedStatement preparestatement = connect.prepareStatement(sql);
 		    preparestatement.setString(1,form.getCitizenship());
 		    preparestatement.setString(2,form.getResidency());
-		    preparestatement.setString(3,form.getFamily());
+		    preparestatement.setInt(3,form.getFamily());
 		    preparestatement.setInt(4,form.getRecipient_ID());
 		    preparestatement.executeUpdate();
 		    connect.close();
