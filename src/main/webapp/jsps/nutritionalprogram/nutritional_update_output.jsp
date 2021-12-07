@@ -21,26 +21,37 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Nutritional</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	program_name    :<input type="text" name="program_name" value="${nutritional.program_name }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.program_name }</span>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	program_ID：<input type="text" name="program_ID" value="${nutritional.program_ID }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	administrator_ID	：<input type="text" name="administrator_ID" value="${nutritional.administrator_ID }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.administrator_ID }</span>
+	<br/>
+	funds	：<input type="text" name="funds" value="${nutritional.funds }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.funds }</span>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/NutritionalServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="program_ID" value="${nutritional.program_ID }"/>
+	program_name    :<input type="text" name="program_name" value="${nutritional.program_name }" />
+	<span style="color: red; font-weight: 900">${errors.program_name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	program_ID：<input type="text" name="program_ID" value="${form.program_ID }" />
+	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
+	<br/>
+	administrator_ID	：<input type="text" name="administrator_ID" value="${nutritional.administrator_ID }" />
+	<span style="color: red; font-weight: 900">${errors.administrator_ID }</span>
+	<br/>
+	funds	：<input type="text" name="funds" value="${nutritional.funds }" />
+	<span style="color: red; font-weight: 900">${errors.funds }</span>
 	<br/>
 	<input type="submit" value="Update Entity1"/>
 </form>

@@ -1,4 +1,4 @@
-package entity1.dao;
+package nutritional.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,12 +12,12 @@ import java.sql.SQLException;
 //import java.util.ArrayList;
 //import java.util.List;
 
-import entity1.domain.Entity1;
+import nutritional.domain.Nutritional;
 
 /**
  * DDL functions performed in database
  */
-public class Entity1Dao {
+public class NutritionalDao {
 	
 	/**
 	 * user name to connect to the database 
@@ -29,29 +29,30 @@ public class Entity1Dao {
 	 */
 	private String MySQL_password = "pass123"; //TODO change password
 
-	public Entity1 findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Entity1 entity1 = new Entity1();
+	public Nutritional findByProgram_ID(Integer program_ID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Nutritional nutritional = new Nutritional();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
-		    String sql = "select * from entity1 where username=?";
+		    String sql = "select * from nutritional where program_ID=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setInt(1,program_ID);
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	String user_name = resultSet.getString("username");
-		    	if(user_name.equals(username)){
-		    		entity1.setUsername(resultSet.getString("username"));
-		    		entity1.setPassword(resultSet.getString("password"));
-		    		entity1.setEmail(resultSet.getString("email"));		
+		    	Integer Program_ID = Integer.parseInt(resultSet.getString("program_ID"));
+		    	if(Program_ID.equals(program_ID)){
+		    		nutritional.setProgram_ID(program_ID);
+		    		nutritional.setAdministrator_ID(Integer.parseInt(resultSet.getString("administrator_ID")));
+		    		nutritional.setProgram_name(resultSet.getString("program_name"));
+		    		nutritional.setFunds(Integer.parseInt(resultSet.getString("funds")));
 		    	}
 		    }
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
-		return entity1;
+		return nutritional;
 	}	
 	
 	/**
@@ -62,16 +63,17 @@ public class Entity1Dao {
 	 * @throws InstantiationException 
 	 */
 	
-	public void add(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void add(Nutritional form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
 			
-			String sql = "insert into entity1 values(?,?,?)";
+			String sql = "insert into nutritional (program_name, program_ID, administrator_ID, funds) values(?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getUsername());
-		    preparestatement.setString(2,form.getPassword());
-		    preparestatement.setString(3,form.getEmail());
+			preparestatement.setString(1,form.getProgram_name());
+		    preparestatement.setInt(2,form.getProgram_ID());
+		    preparestatement.setInt(3,form.getAdministrator_ID());
+		    preparestatement.setInt(4,form.getFunds());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -86,16 +88,20 @@ public class Entity1Dao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void update(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Nutritional form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+			String sql = "UPDATE nutritional SET program_name = ?, administrator_ID = ?, funds = ?  where program_ID = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+			preparestatement.setString(1,form.getProgram_name());
+			preparestatement.setInt(2,form.getAdministrator_ID());
+			preparestatement.setInt(3,form.getFunds());
+			preparestatement.setInt(4,form.getProgram_ID());
+		    
+		    
+		    
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -105,19 +111,19 @@ public class Entity1Dao {
 	
 	
 	/**
-	 * @param username
+	 * @param program_ID
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void delete(Integer program_ID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
 			
-			String sql = "delete from entity1 where username = ?";
+			String sql = "delete from nutritional where program_ID = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setInt(1,program_ID);
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

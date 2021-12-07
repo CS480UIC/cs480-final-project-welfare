@@ -75,7 +75,16 @@
     <url-pattern>/RecipientServletDelete</url-pattern>
   </servlet-mapping>
   
-  
+      <servlet>
+    <description></description>
+    <display-name>RecipientServletUpdate</display-name>
+    <servlet-name>RecipientServletUpdate</servlet-name>
+    <servlet-class>recipient.web.servlet.RecipientServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientServletUpdate</servlet-name>
+    <url-pattern>/RecipientServletUpdate</url-pattern>
+  </servlet-mapping>
     <servlet>
     <description></description>
     <display-name>RecipientServletRead</display-name>
@@ -283,6 +292,8 @@
     <url-pattern>/AddressServletUpdate</url-pattern>
   </servlet-mapping>
 
+ 
+  
   <servlet>
     <description></description>
     <display-name>findAll</display-name>
