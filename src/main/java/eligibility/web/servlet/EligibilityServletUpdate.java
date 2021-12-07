@@ -46,8 +46,9 @@ public class EligibilityServletUpdate extends HttpServlet {
 
 		if(method.equals("search"))
 		{
+			System.out.println(Integer.parseInt(request.getParameter("recipient_ID")));
 			try {
-				eligibility = eligibilitydao.findByRecipientID(Integer.parseInt(request.getParameter("recipient_id")));
+				eligibility = eligibilitydao.findByRecipientID(Integer.parseInt(request.getParameter("recipient_ID")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -76,10 +77,10 @@ public class EligibilityServletUpdate extends HttpServlet {
 				String[] values = paramMap.get(name);
 				info.add(values[0]);
 			}
-			form.setRecipient_ID(Integer.parseInt(info.get(1)));
-			form.setCitizenship(info.get(2));
-			form.setResidency(info.get(3));
-			form.setFamily(Integer.parseInt(info.get(4)));
+			form.setRecipient_ID(Integer.parseInt(request.getParameter("recipientID")));
+			form.setCitizenship(request.getParameter("citizenship"));
+			form.setResidency(request.getParameter("residency"));
+			form.setFamily(Integer.parseInt(request.getParameter("family")));
 
 			try {
 				eligibilitydao.update(form);

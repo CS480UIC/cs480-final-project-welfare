@@ -24,8 +24,8 @@
   <h1>Delete Eligibility</h1>
 <form action="<c:url value='/EligibilityServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Recipient ID   :<input type="text" name="recipient_id" value="${form.recipient_id }"/>
-	<span style="color: red; font-weight: 900">${errors.recipient_id }</span>
+	Delete Recipient ID   :<input type="text" name="recipient_ID" value="${form.recipient_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.recipient_ID }</span>
 	<br/>
 	<input type="submit" value="Delete Eligibility"/>
 </form>
