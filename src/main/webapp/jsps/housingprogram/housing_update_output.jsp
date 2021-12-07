@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Housing</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,28 +21,40 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Housing</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	program_name    :<input type="text" name="program_name" value="${housing.program_name }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	program_ID：<input type="text" name="program_ID" value="${housing.program_ID }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	administrator_ID：<input type="text" name="administrator_ID" value="${housing.administrator_ID }" disabled/>
+	<br/>
+	housing_size	：<input type="text" name="housing_size" value="${housing.housing_size }" disabled/>
+	<br/>
+	funds	：<input type="text" name="funds" value="${housing.funds }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/HousingServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+				<input type="hidden" name="program_ID" value="${form.program_ID }"/>
+	program_name    :<input type="text" name="program_name" value="${form.program_name }"/>
+	<span style="color: red; font-weight: 900">${errors.program_name }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	program_ID：<input type="text" name="programID" value="${housing.program_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	administrator_ID：<input type="text" name="administrator_ID" value="${form.administrator_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.administrator_ID }</span>
+	<br/>
+	housing_size	：<input type="text" name="housing_size" value="${form.housing_size }"/>
+	<span style="color: red; font-weight: 900">${errors.housing_size }</span>
+	<br/>
+	funds	：<input type="text" name="funds" value="${form.funds }"/>
+	<span style="color: red; font-weight: 900">${errors.funds }</span>
+	<br/>
+	<input type="submit" value="Update Housing"/>
 </form>
 
 </body>

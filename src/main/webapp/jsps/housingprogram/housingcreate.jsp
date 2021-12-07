@@ -29,8 +29,11 @@
 	program_ID：<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-	source	：<input type="text" name="source" value="${form.source }"/>
-	<span style="color: red; font-weight: 900">${errors.source }</span>
+	administrator_ID：<input type="text" name="administrator_ID" value="${form.administrator_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.administrator_ID }</span>
+	<br/>
+	housing_size	：<input type="text" name="housing_size" value="${form.housing_size }"/>
+	<span style="color: red; font-weight: 900">${errors.housing_size }</span>
 	<br/>
 	funds	：<input type="text" name="funds" value="${form.funds }"/>
 	<span style="color: red; font-weight: 900">${errors.funds }</span>
