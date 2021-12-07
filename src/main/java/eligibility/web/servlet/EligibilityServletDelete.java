@@ -41,7 +41,7 @@ public class EligibilityServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				eligibility = eligibilityDao.findByRecipientID(Integer.parseInt(request.getParameter("recipient_id")));
+				eligibility = eligibilityDao.findByRecipientID(Integer.parseInt(request.getParameter("recipient_ID")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -63,7 +63,7 @@ public class EligibilityServletDelete extends HttpServlet {
 		else if(method.equals("delete"))
 		{	
 			try {
-				eligibilityDao.delete(Integer.parseInt(request.getParameter("recipient_id")));
+				eligibilityDao.delete(Integer.parseInt(request.getParameter("recipient_ID")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
