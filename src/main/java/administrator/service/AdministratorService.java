@@ -1,6 +1,8 @@
 package administrator.service;
 
 
+import java.util.List;
+
 import administrator.dao.AdministratorDao;
 import administrator.domain.Administrator;
 
@@ -10,7 +12,7 @@ import administrator.domain.Administrator;
  *
  */
 public class AdministratorService {
-	private AdministratorDao entity1Dao = new AdministratorDao();
+	private AdministratorDao administratorDao = new AdministratorDao();
 	
 	/**
 	 * register a Entity1
@@ -26,7 +28,7 @@ public class AdministratorService {
 		int AdminID = form.getID();
 		entity1 = RD.findByID(AdminID);
 		if(entity1.getID()==(form.getID())) throw new AdministratorException("This administrator ID has already been registered!");
-		entity1Dao.add(form);
+		administratorDao.add(form);
 	}
 	
 	public void delete(Administrator form) throws AdministratorException, ClassNotFoundException, InstantiationException, IllegalAccessException{
@@ -36,7 +38,12 @@ public class AdministratorService {
 		int AdminID = form.getID();
 		entity1 = RD.findByID(AdminID);
 		if(entity1.getID()!=(form.getID())) throw new AdministratorException("This administrator ID does not exist!");
-		entity1Dao.add(form);
+		administratorDao.add(form);
+	}
+	
+	public List<Object> findManager() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return administratorDao.findManager();
+		
 	}
 
 }
