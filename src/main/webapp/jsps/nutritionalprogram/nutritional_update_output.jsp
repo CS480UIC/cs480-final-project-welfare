@@ -44,7 +44,7 @@
 	program_name    :<input type="text" name="program_name" value="${nutritional.program_name }" />
 	<span style="color: red; font-weight: 900">${errors.program_name }</span>
 	<br/>
-	program_ID：<input type="text" name="programID" value="${form.program_ID }" />
+	program_ID：<input type="text" name="program_ID" value="${nutritional.program_ID }" />
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
 	administrator_ID	：<input type="text" name="administrator_ID" value="${nutritional.administrator_ID }" />

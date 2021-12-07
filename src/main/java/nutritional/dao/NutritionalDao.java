@@ -41,7 +41,10 @@ public class NutritionalDao {
 
 		    while(resultSet.next()){
 		    	Integer Program_ID = Integer.parseInt(resultSet.getString("program_ID"));
-		    	if(Program_ID.equals(program_ID)){
+		    	System.out.println(program_ID);
+		    	System.out.println(Program_ID);
+		    	if(Program_ID == program_ID){
+		    		
 		    		nutritional.setProgram_ID(program_ID);
 		    		nutritional.setAdministrator_ID(Integer.parseInt(resultSet.getString("administrator_ID")));
 		    		nutritional.setProgram_name(resultSet.getString("program_name"));

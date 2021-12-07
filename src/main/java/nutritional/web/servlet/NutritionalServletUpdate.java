@@ -78,7 +78,7 @@ public class NutritionalServletUpdate extends HttpServlet {
 				info.add(values[0]);
 			}
 			form.setProgram_name(request.getParameter("program_name"));
-			form.setProgram_ID(Integer.parseInt(request.getParameter("programID")));
+			form.setProgram_ID(Integer.parseInt(request.getParameter("program_ID")));
 			form.setAdministrator_ID(Integer.parseInt(request.getParameter("administrator_ID")));
 			form.setFunds(Integer.parseInt(request.getParameter("funds")));
 
