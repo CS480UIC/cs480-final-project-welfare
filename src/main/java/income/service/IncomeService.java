@@ -37,4 +37,9 @@ public class IncomeService {
 		return incomeDao.findGrossIncomeSearch();
 		
 	}
+	
+	public List<Object> findRecipientInvestments() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return incomeDao.findRecipientInvestments();
+		
+	}
 }

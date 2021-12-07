@@ -44,7 +44,7 @@
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list the recipients' id who are eligible for all medical programs </a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the recipients' ID who have made money from investments</a>&nbsp;&nbsp;
+    <a href="<c:url value='/RecipientInvestments'/>" target="body">Please list all the recipients' ID who have made money from investments</a>&nbsp;&nbsp;
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the nutritional program names and their source of funding</a>&nbsp;&nbsp;
     <br>

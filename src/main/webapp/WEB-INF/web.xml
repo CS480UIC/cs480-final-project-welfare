@@ -603,11 +603,23 @@
     <display-name>Managers</display-name>
     <servlet-name>Managers</servlet-name>
     
-    <servlet-class>administrators.web.servlet.Managers</servlet-class>
+    <servlet-class>administrator.web.servlet.Managers</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Managers</servlet-name>
     <url-pattern>/Managers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RecipientInvestments</display-name>
+    <servlet-name>RecipientInvestments</servlet-name>
+    
+    <servlet-class>income.web.servlet.RecipientInvestments</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipientInvestments</servlet-name>
+    <url-pattern>/RecipientInvestments</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

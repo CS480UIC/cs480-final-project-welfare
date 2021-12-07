@@ -175,4 +175,27 @@ public class IncomeDao {
 		return list;
 		
 	}
+	
+	public List<Object> findRecipientInvestments() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
+			String sql = "select * from InvestmentsAboveZero";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Income income = new Income();
+				income.setRecipient_ID(resultSet.getInt("recipient_ID"));
+				income.setInvestments(resultSet.getInt("investments"));
+	    		
+	    		list.add(income);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
 }
