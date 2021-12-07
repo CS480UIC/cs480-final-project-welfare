@@ -283,6 +283,138 @@
     <url-pattern>/AddressServletUpdate</url-pattern>
   </servlet-mapping>
 
+ <servlet>
+    <description></description>
+    <display-name>EligibilityServletCreate</display-name>
+    <servlet-name>EligibilityServletCreate</servlet-name>
+    <servlet-class>eligibility.web.servlet.EligibilityServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EligibilityServletCreate</servlet-name>
+    <url-pattern>/EligibilityServletCreate</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>EligibilityServletRead</display-name>
+    <servlet-name>EligibilityServletRead</servlet-name>
+    <servlet-class>eligibility.web.servlet.EligibilityServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EligibilityServletRead</servlet-name>
+    <url-pattern>/EligibilityServletRead</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>EligibilityServletUpdate</display-name>
+    <servlet-name>EligibilityServletUpdate</servlet-name>
+    <servlet-class>eligibility.web.servlet.EligibilityServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EligibilityServletUpdate</servlet-name>
+    <url-pattern>/EligibilityServletUpdate</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>EligibilityServletDelete</display-name>
+    <servlet-name>EligibilityServletDelete</servlet-name>
+    <servlet-class>eligibility.web.servlet.EligibilityServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EligibilityServletDelete</servlet-name>
+    <url-pattern>/EligibilityServletDelete</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <description></description>
+    <display-name>MedicalServletCreate</display-name>
+    <servlet-name>MedicalServletCreate</servlet-name>
+    <servlet-class>medical.web.servlet.MedicalServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalServletCreate</servlet-name>
+    <url-pattern>/MedicalServletCreate</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>MedicalServletRead</display-name>
+    <servlet-name>MedicalServletRead</servlet-name>
+    <servlet-class>medical.web.servlet.MedicalServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalServletRead</servlet-name>
+    <url-pattern>/MedicalServletRead</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>MedicalServletUpdate</display-name>
+    <servlet-name>MedicalServletUpdate</servlet-name>
+    <servlet-class>medical.web.servlet.MedicalServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalServletUpdate</servlet-name>
+    <url-pattern>/MedicalServletUpdate</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>MedicalServletDelete</display-name>
+    <servlet-name>MedicalServletDelete</servlet-name>
+    <servlet-class>medical.web.servlet.MedicalServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalServletDelete</servlet-name>
+    <url-pattern>/MedicalServletDelete</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <description></description>
+    <display-name>MedicalFacilityServletCreate</display-name>
+    <servlet-name>MedicalFacilityServletCreate</servlet-name>
+    <servlet-class>medicalfacility.web.servlet.MedicalFacilityServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalFacilityServletCreate</servlet-name>
+    <url-pattern>/MedicalFacilityServletCreate</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>MedicalFacilityServletRead</display-name>
+    <servlet-name>MedicalFacilityServletRead</servlet-name>
+    <servlet-class>medicalfacility.web.servlet.MedicalFacilityServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalFacilityServletRead</servlet-name>
+    <url-pattern>/MedicalFacilityServletRead</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>MedicalFacilityServletUpdate</display-name>
+    <servlet-name>MedicalFacilityServletUpdate</servlet-name>
+    <servlet-class>medicalfacility.web.servlet.MedicalFacilityServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalFacilityServletUpdate</servlet-name>
+    <url-pattern>/MedicalFacilityServletUpdate</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>MedicalFacilityServletDelete</display-name>
+    <servlet-name>MedicalFacilityServletDelete</servlet-name>
+    <servlet-class>medicalfacility.web.servlet.MedicalFacilityServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MedicalFacilityServletDelete</servlet-name>
+    <url-pattern>/MedicalFacilityServletDelete</url-pattern>
+  </servlet-mapping>
+
   <servlet>
     <description></description>
     <display-name>findAll</display-name>

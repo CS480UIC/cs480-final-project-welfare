@@ -22,7 +22,7 @@
   
   <body>
   <h1>MedicalFacility Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/MedicalFacilityServletCreate'/>" method="post">
 	Program ID    :<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>

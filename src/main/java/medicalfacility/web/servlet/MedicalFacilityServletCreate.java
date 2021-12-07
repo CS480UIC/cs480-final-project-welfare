@@ -1,0 +1,71 @@
+package medicalfacility.web.servlet;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import medicalfacility.domain.MedicalFacility;
+import medicalfacility.service.MedicalFacilityException;
+import medicalfacility.service.MedicalFacilityService;
+
+
+/**
+ * Servlet implementation class UserServlet
+ */
+
+public class MedicalFacilityServletCreate extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public MedicalFacilityServletCreate() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request,response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		MedicalFacilityService medicalfacilityservice = new MedicalFacilityService();
+		Map<String,String[]> paramMap = request.getParameterMap();
+		MedicalFacility form = new MedicalFacility();
+		List<String> info = new ArrayList<String>();
+
+		for(String name : paramMap.keySet()) {
+			String[] values = paramMap.get(name);
+			info.add(values[0]);
+		}
+		form.setProgram_ID(Integer.parseInt(info.get(0)));
+		form.setMedicalfacility_ID(Integer.parseInt(info.get(1)));
+		form.setFacility(info.get(2));
+		
+		try {
+			medicalfacilityservice.create(form);
+			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
+			
+		} catch (ClassNotFoundException | MedicalFacilityException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} 
+		
+	}
+
+}

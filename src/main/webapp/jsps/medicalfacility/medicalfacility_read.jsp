@@ -25,15 +25,15 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/Entity1ServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	program_ID    :<input type="text" name="program_ID" value="${form.program_ID }"/>
+	Program ID    :<input type="text" name="program_ID" value="${form.program_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.program_ID }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	MedicalFacility ID：<input type="text" name="medicalfacility_ID" value="${form.medicalfacility_ID }"/>
+	<span style="color: red; font-weight: 900">${errors.medicalfacility_ID }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
+	Facility	：<input type="text" name="facility" value="${form.facility }"/>
+	<span style="color: red; font-weight: 900">${errors.facility }</span>
+	<br/>
 	<input type="submit" value="Read MedicalFacility"/>
 </form>
   </body>
