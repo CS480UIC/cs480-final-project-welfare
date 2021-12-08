@@ -46,7 +46,7 @@
     <br>
     <a href="<c:url value='/RecipientInvestments'/>" target="body">Please list all the recipients' ID who have made money from investments</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the nutritional program names and their source of funding</a>&nbsp;&nbsp;
+    <a href="<c:url value='/NuritionalProgramSources'/>" target="body">Please list all the nutritional program names and their source of funding</a>&nbsp;&nbsp;
     <br>
     
     <br>
@@ -58,7 +58,7 @@
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please find the oldest year of all recipient birthdates</a>&nbsp;&nbsp;
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all recipients' ID that have a gross income of over 50000</a>&nbsp;&nbsp;
+    <a href="<c:url value='/RecipientsIncomeOver'/>" target="body">Please list all recipients' ID that have a gross income of over 50000</a>&nbsp;&nbsp;
     <br>
     
   </body>
