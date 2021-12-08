@@ -12,6 +12,7 @@ import java.util.List;
 //import java.util.List;
 
 import nutritional.domain.Nutritional;
+import nutritional.domain.NutritionalProgramSourceInfo;
 import user.domain.User;
 
 /**
@@ -146,6 +147,28 @@ public class NutritionalDao {
 				Nutritional nutritional = new Nutritional();
 				nutritional.setFunds(resultSet.getInt("funds"));
 	    		list.add(nutritional);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	public List<Object> findNutritionalProgramSource() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/welfare", MySQL_user, MySQL_password);
+			String sql = "select * from getNutritionalSource";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				NutritionalProgramSourceInfo nutritionalsourceinfo = new NutritionalProgramSourceInfo();
+				nutritionalsourceinfo.setProgram_name(resultSet.getString("program_name"));
+				nutritionalsourceinfo.setSource(resultSet.getString("source"));
+	    		list.add(nutritionalsourceinfo);
 			 }
 			connect.close();
 		} catch(SQLException e) {

@@ -32,5 +32,10 @@ public class NutritionalService {
 		return nutritionalDao.findNutritionalFund();
 		
 	}
+	
+	public List<Object> findNutritionalProgramSource() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return nutritionalDao.findNutritionalProgramSource();
+		
+	}
 
 }
